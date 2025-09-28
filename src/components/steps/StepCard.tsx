@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Step } from '@/lib/data';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
 type StepCardProps = {
@@ -12,22 +12,24 @@ type StepCardProps = {
 export default function StepCard({ step, index }: StepCardProps) {
   return (
     <Link href={`/steps/${step.id}`} className="group block">
-      <Card className="h-full overflow-hidden transition-all group-hover:shadow-lg group-hover:-translate-y-1 group-hover:shadow-primary/20">
-        <div className="relative h-40 w-full">
+      <Card className="h-full overflow-hidden transition-all duration-300 ease-in-out bg-card hover:shadow-2xl hover:-translate-y-2 hover:shadow-primary/20 border-border/50">
+        <div className="relative h-48 w-full">
             <Image
                 src={step.image.url}
                 alt={step.title}
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 data-ai-hint={step.image.hint}
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
         </div>
         <CardHeader>
-          <Badge variant="secondary" className="w-fit mb-2 bg-accent/50 text-accent-foreground">Passo {index + 1}</Badge>
-          <CardTitle className="font-headline text-xl">{step.title}</CardTitle>
+          <Badge variant="secondary" className="w-fit mb-2 bg-primary/10 text-primary font-semibold border-primary/20">Passo {index + 1}</Badge>
+          <h3 className="font-headline text-xl font-bold text-foreground">{step.title}</h3>
         </CardHeader>
         <CardContent>
-          <p className="text-muted-foreground">{step.description}</p>
+          <p className="text-muted-foreground text-sm">{step.description}</p>
         </CardContent>
       </Card>
     </Link>
