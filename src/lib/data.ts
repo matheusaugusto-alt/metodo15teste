@@ -96,11 +96,12 @@ export const courseSteps: Step[] = [
             title: 'Passo a Passo (3 a 6 minutos)',
             icon: 'CheckSquare',
             content: [
-              '1º Passo: Medidor de calma (45s): Ofereça 1 micro-petisco. Se pegar e o corpo estiver solto, continue (nota 1). Se lamber o focinho, vá mais devagar (nota 2). Se recusar, afaste-se, tente um farejo fácil; persistindo, encerre (nota 3).',
-              '2º Passo: Farejo fácil (2min): A 1,5-2m do chuveiro, espalhe 6-10 micro-petiscos em locais fáceis. Se farejar bem, aproxime-se do chuveiro.',
-              '3º Passo: Lamber/Roer devagar (1min): Ofereça um brinquedo de lamber ou mordedor macio. Interrompa antes que ele enjoe e dê um micro-petisco.',
-              '4º Passo: Sinal de começar (20s x3): Coloque um tapetinho a 1m do chuveiro. Quando ele subir sozinho, elogie e dê um micro-petisco. Repita 3x. Na última, coloque o tapete dentro do box.',
-              '5º Passo: Entrar no box: Com a água desligada, convide-o a entrar. Dê 2-3 micro-petiscos no tapete antiderrapante. Se ficar tenso, saia e faça 30-45s de farejo antes de tentar novamente.',
+              'Objetivo: terminar com o cachorro calmo e entrando no box sem resistência.',
+              '1º Passo: Medidor de calma (tempo gasto: 45 segundos): Ofereça 1 micro-petisco e observe o corpo: Se ele pegar o petisco, corpo solto → continue.(nota 1 - ok). Se ele lamber focinho, mais cauteloso → faça tudo mais devagar. (nota 2 - atenção). Se ele recusar petisco, tenta sair → não force. Afaste 2–3 m e tente farejo fácil. Persistindo, encerre e tente mais tarde (nota 3 - alto)',
+              '2º Passo: Farejo fácil (tempo gasto: 2 minutos): Distância inicial: 1,5 a 2 m do chuveiro. Espalhe 6 a 10 micro-petiscos (tamanho de uma ervilha) em cantinhos fáceis (chão, rodapé, atrás da toalha). Se ele fareja e come com fluidez, aproxime aos poucos do chuveiro. Se travar ou ignorar, volte 1 passo (afaste e facilite).',
+              '3º Passo: Lamber/Roer devagar (tempo gasto: 1 minuto): Ofereça brinquedo de lamber ou mordedor macio (sem disputar com ele, apenas ofereça). Interrompa antes de ele enjoar e dê 1 micro-petisco.',
+              '4º Passo: Sinal de começar (tempo gasto: 20 segundos, 3 vezes): Coloque um tapetinho a 1 metro do chuveiro. Quando ele subir sozinho, marque (elogie) e dê 1 micro-petisco. Repita 3 vezes. Na última, leve o tapete dentro do box do chuveiro. Sinal válido: na 3ª, ele sobe sem convite.',
+              '5º Passo: Entrar no box: Água ainda desligada. Convide com calma. Assim que entrar, dê 2–3 micro-petiscos no tapete antiderrapante e faça pausa de 2 segundos. Se ficar muito tenso, saia, faça 30–45 segundos de farejo fácil e tente novamente.',
             ],
           },
           {
@@ -111,15 +112,15 @@ export const courseSteps: Step[] = [
               { id: 's1-c1', text: 'Água desligada' },
               { id: 's1-c2', text: 'Tapete antiderrapante no box' },
               { id: 's1-c3', text: '10–12 micro-petiscos separados' },
-              { id: 's1-c4', text: 'Brinquedo de lamber ou mordedor à mão' },
-              { id: 's1-c5', text: 'Tapetinho de sinal pronto' },
-              { id: 's1-c6', text: 'Medidor de calma checado (nota 1 ou 2)' },
-              { id: 's1-c7', text: 'Farejo realizado por 2-3 min' },
-              { id: 's1-c8', text: 'Lamber/Roer por 60-90s e interrompido' },
-              { id: 's1-c9', text: 'Sinal de começar repetido 3x' },
-              { id: 's1-c10', text: 'Entrada no box com reforço imediato' },
-              { id: 's1-c11', text: 'Plano B: Voltar 1 passo se necessário' },
-              { id: 's1-c12', text: 'Plano C: Encerrar se recusar 3x' },
+              { id: 's1-c4', text: 'Brinquedo de lamber ou mordedor macio à mão' },
+              { id: 's1-c5', text: 'Tapetinho de sinal (para ele subir sozinho)' },
+              { id: 's1-c6', text: 'Medidor de calma 0–2' },
+              { id: 's1-c7', text: 'Farejar por 2–3 min (ajustar distância)' },
+              { id: 's1-c8', text: 'Lamber/Roer por 60–90 s (interromper no auge)' },
+              { id: 's1-c9', text: 'Sinal de começar: 3 repetições (última na entrada do box)' },
+              { id: 's1-c10', text: 'Entrou no box com reforço imediato (2–3 micro-petiscos)' },
+              { id: 's1-c11', text: 'Voltar 1 passo (afastar, facilitar)' },
+              { id: 's1-c12', text: 'Recusou 3 vezes? Encerre com um reforço simples fora do box e tente em outro horário' },
             ],
           },
         ]
@@ -145,7 +146,7 @@ export const courseSteps: Step[] = [
             content: [
               'Objetivo: remover gatilhos de medo/fuga e deixar o ambiente previsível.',
               'Por que importa: medo de escorregar, água fria/quente demais e barulho antecipado sabotam a cooperação.',
-              'É a etapa de tirar os sustos do ambiente (escorregar, barulho, água gelada/quente demais) e apresentar tudo de forma previsível. A regra é: mostrar primeiro sem assustar, depois avançar aos poucos.'
+              'O que é: É a etapa de tirar os sustos do ambiente (escorregar, barulho, água gelada/quente demais) e apresentar tudo de forma previsível. A regra é: mostrar primeiro sem assustar, depois avançar aos poucos.'
             ],
           },
           {
@@ -170,13 +171,15 @@ export const courseSteps: Step[] = [
             title: 'Passo a Passo (1 a 3 minutos)',
             icon: 'CheckSquare',
             content: [
-              '1º Passo: Preparar o espaço (30-60s): Tapete antiderrapante no box, toalha à mão, água desligada e sem ruídos bruscos.',
-              '2º Passo: Teste de piso (10-20s): Deixe o cão entrar e parar no tapete. Se hesitar, reforce a entrada com um petisco.',
-              '3º Passo: Apresentação da duchinha desligada (10-20s): Mostre e toque o cão com a duchinha, observando se ele permanece relaxado.',
-              '4º Passo: Pingos no tapete (10-20s): Ligue a água fraca, deixe pingar no tapete (longe do cão) e reforce com petisco.',
-              '5º Passo: Ajuste de temperatura (10-20s): Com a água pingando, ajuste para morna, testando no seu pulso.',
-              '6º Passo: Filete fino nas patas (10-30s): Direcione o filete para as patas dianteiras, pare, reforce, e repita nas traseiras.',
-              '7º Passo: Pausa e decisão (5-10s): Se o cão estiver calmo, avance. Se tenso, desligue a água e volte um passo.'
+              'Meta: remover gatilhos de medo e avisar cada novidade antes de acontecer.',
+              '1º Passo: Preparar o espaço (30–60 s): Tapete antiderrapante dentro do box. Toalha à mão. Água desligada. Evite ruídos como fechar porta/janela batendo.',
+              '2º Passo: Teste de piso (10–20 s): Deixe o cão entrar e parar no tapete. Se hesitar, volte ao tapetinho de sinal (da etapa anterior) na entrada do box, pague 1 micro-petisco e só então convide pra entrar.',
+              '3º Passo: Apresentação da duchinha DESLIGADA (10–20 s): Mostre a duchinha perto do corpo, sem tocar; depois toque rápido no ombro ou costela. Observe: corpo solto? Aceita petisco? Sim → seguir. Não → repita mais devagar.',
+              '4º Passo: Pingos no TAPETE (10–20 s): Ligue a água bem fraca e deixe pingar no tapete, fora do cão, por 10–20 s. Dica: fale calmo, pague 1 micro-petisco. Se tensionar: desligue, pausa de 5 s, volte ao passo anterior.',
+              '5º Passo: Ajuste de temperatura (10–20 s, SEM encostar no cão): Com a água pingando fraca, ajuste até ficar morna confortável. Teste no pulso: sem queimar, sem gelar. Mantém filete fraco.',
+              '6º Passo: Filete fino nas PATAS (10–30 s): Leve o filete fraco até as patas dianteiras por poucos segundos. Pare 2 s, pague 1 micro-petisco. Repita nas patas traseiras. Sinais de que pode avançar: corpo solto, sem recuar, aceita petisco.',
+              '7º Passo: Pausa curta + decidir próximo passo (5–10 s): Está tranquilo? → Próxima etapa (peito/dorso no Pilar 3). Ficou tenso? → Desliga, 20–30 s farejo fácil fora do jato, e repete o passo 5.',
+              'Dicas: Evite chamar para brincadeira agitada ou aumentar a pressão da água para “acabar logo”. Posição do tutor: lateral/traseira ao cão (não de frente bloqueando). Layout anti-fuga: porta/box fechados, caminho curto e seco até o box. Orelhas: objetivo é manter secas durante, e rosto será só pano úmido no fim.'
             ],
           },
           {
@@ -199,7 +202,7 @@ export const courseSteps: Step[] = [
   },
   {
     id: 'step-3',
-    title: 'A Hora do Banho',
+    title: '3º Passo - Condução do banho',
     description: 'Técnicas para um banho eficaz.',
     longDescription: 'Com o cão mais calmo e o ambiente preparado, o banho pode começar. Mantenha a calma e siga um processo lógico para ser rápido e eficiente.',
     icon: ShowerHead,
@@ -207,30 +210,86 @@ export const courseSteps: Step[] = [
     stages: [
       {
         id: 's3-stage1',
-        title: 'Processo',
+        title: 'Teoria',
+        blocks: [
+          {
+            type: 'info',
+            title: 'Informações Básicas',
+            icon: 'Info',
+            content: [
+              'O que é: conduzir o banho com um comando, ordem fixa e pausas programadas, para o cão ficar no lugar.',
+              'Por que importa: cérebro do cão responde melhor a tarefas curtas + pausas; sem ritmo, ele “estoura”.'
+            ]
+          },
+          {
+            type: 'faq',
+            title: 'Dúvidas Comuns',
+            icon: 'HelpCircle',
+            content: [
+              'Qual comando usar? Use uma palavra só (ex.: “Fica”), sempre igual, em tom curto e neutro.',
+              'Por que pausar? Não atrasa? Pausa evita sobrecarga. Com pausas, o banho costuma terminar mais rápido e com menos luta.',
+              'Posso mudar a ordem das regiões? Evite. Mesma ordem sempre = previsibilidade e menos sustos.',
+              'Como segurar o cão? Não segure no pescoço. Use a “mão parede”: mão aberta apoiada no quadril ou ombro, firme e suave, só como “apoio”, nunca forçando.',
+              'E o rosto? Sem jato. Limpe no final com pano úmido.'
+            ]
+          },
+          {
+            type: 'info',
+            title: 'Aviso: Molhar por partes?',
+            icon: 'AlertTriangle',
+            content: [
+              'Em cães ansiosos (banho comum): Melhor fazer por partes (ciclos curtos): molhar → ensaboar → enxaguar uma região de cada vez (traseiro/cauda → dorso/laterais → peito/pescoço → patas; rosto no pano úmido no final).',
+              'Por quê? Reduz o tempo contínuo de água em cima do cão (menos estresse). Dá pausas programadas entre regiões (respira, lambe/ganha micro-petisco). Mantém previsibilidade: “termino aqui, pauso, depois a próxima parte”.',
+              'Dica prática (fluxo híbrido): antes de começar os ciclos, faça um pré-molhado leve e rápido no corpo (exceto cabeça) por 10–20 s, só para tirar o “choque” do primeiro jato. Depois siga nos ciclos por região.',
+              'Em cães tranquilos/experientes (banho comum): Pode molhar o corpo todo, ensaboar todo, e depois enxaguar todo — desde que: Você mantenha o ritmo (sem demorar com o shampoo parado na pele), a água esteja morna e com pressão baixa/média, e haja poucas pausas e o cão não mostre sinais de incômodo.',
+              'Quando não fazer “por partes”: Shampoo terapêutico/medicado (dermatite, antipruriginoso etc.): quase sempre precisa de contato no corpo todo por X minutos (rótulo). O fluxo indicado é: Pré-molhar rápido o corpo (sem rosto). Aplicar shampoo diluído em todo o corpo (evitar olhos/narinas). Aguardar o tempo de contato (ex.: 5–10 min), água desligada, usando pausas curtas com lambe-lambe para manter o cão calmo. Enxaguar muito bem, de preferência por zonas (para garantir remoção total). Pelagem muito densa/longa com muita sujeira: espalhar o shampoo no corpo todo ajuda a penetrar melhor; depois enxágue caprichado por zonas.'
+            ]
+          }
+        ]
+      },
+      {
+        id: 's3-stage2',
+        title: 'Prática',
         blocks: [
           {
             type: 'guide',
             title: 'Passo a Passo',
             icon: 'CheckSquare',
             content: [
-              'Molhe o corpo do cão, evitando a cabeça e o rosto.', 
-              'Aplique o shampoo e massageie suavemente.', 
-              'Enxágue completamente, certificando-se de remover todo o produto.',
-              'Lave o rosto por último, usando um pano úmido sem sabão.'
-            ],
+              'Cuidados importantes: Preparar (30–60 s): tapete antiderrapante, toalha à mão, água morna (testada no pulso), pressão fraca a média, shampoo diluído (se usar diluição, já pronto).',
+              'Ordem fixa das regiões: Traseiro/cauda → Dorso/laterais → Peito/pescoço → Patas → Rosto por último (pano úmido).',
+              'Semáforo para decidir em tempo real: Verde (cooperando): corpo solto, aceita petisco → segue. Amarelo (sinais leves): lamber lábios, inquieto → pausa 30–45 s, ofereça lamber (rapidamente) e retome mais leve. Vermelho (fuga/rosnado): interrompa, reduza estímulo (menos jato/menos tempo), volte 1 etapa e recomece curto.',
+              '1º Passo: Bloco 1 — Traseiro/cauda: Ação (40–60 s): molhar → ensaboar → enxaguar. Mão parede: apoio no quadril. Pausa (30–45 s): pare água, 1–2 micro-petiscos ou 20–30 s de lamber no box.',
+              '2º Passo: Bloco 2 — Dorso e laterais: Ação (40–60 s): molhar → ensaboar → enxaguar, sempre de cima para baixo. Mão parede: apoio no ombro. Pausa (30–45 s) igual ao Bloco 1.',
+              '3º Passo: Bloco 3 — Peito e pescoço: Ação (40–60 s): atenção para não direcionar jato ao rosto. Pausa (30–45 s).',
+              '4º Passo: Bloco 4 — Patas (dianteiras e traseiras): Ação (40–60 s): filete fraco, pouco tempo; se precisar, faça uma pata por vez. Pausa (30–45 s).',
+              '5º Passo: Final — Rosto (fora do jato): Ação (30–60 s): pano úmido com água morna; se usar um pingo de espuma bem diluída, evite olhos e narinas. Encerramento: 1–2 micro-petiscos, voz calma, toalha-pressão (sem esfregar forte).',
+              'Duração típica: 6–12 min (varia por porte e pelagem). O importante é respeitar os blocos e as pausas.',
+              'Opções de atividades calmas (para as pausas): Lamber rapidinho (20–30 s) em brinquedo/lambe-lambe (pequena quantidade). Cheiro conhecido (toalhinha com seu cheiro perto do peito, sem cobrir cabeça). Respiração do tutor + voz baixa (frases curtas: “muito bem”, “tá tudo bem”). Evite: brincadeira agitada, puxar brinquedo, aumentar pressão da água “para acabar logo”.'
+            ]
           },
           {
             type: 'checklist',
-            title: 'Checklist do Banho',
+            title: 'Checklist Completo - Condução do Banho',
             icon: 'ListChecks',
             items: [
-              { id: 's3-c1', text: 'Molhar o corpo' },
-              { id: 's3-c2', text: 'Aplicar e massagear shampoo' },
-              { id: 's3-c3', text: 'Enxaguar completamente o corpo' },
-              { id: 's3-c4', text: 'Limpar o rosto com pano úmido' },
-            ],
-          },
+              { id: 's3-c1', text: 'Tapete antiderrapante' },
+              { id: 's3-c2', text: 'Água morna testada no pulso' },
+              { id: 's3-c3', text: 'Pressão fraca/média ajustada' },
+              { id: 's3-c4', text: 'Shampoo (se diluído, já pronto)' },
+              { id: 's3-c5', text: 'Toalha à mão' },
+              { id: 's3-c6', text: 'Comando único definido (ex.: “Fica”)' },
+              { id: 's3-c7', text: 'Ordem fixa: traseiro/cauda → dorso/laterais → peito/pescoço → patas → rosto (pano)' },
+              { id: 's3-c8', text: 'Blocos de 40–60 s de ação' },
+              { id: 's3-c9', text: 'Pausas de 30–45 s entre blocos' },
+              { id: 's3-c10', text: 'Mão parede em quadril/ombro (nunca pescoço)' },
+              { id: 's3-c11', text: 'Semáforo usado (verde/amarelo/vermelho)' },
+              { id: 's3-c12', text: 'Sem Jato no rosto' },
+              { id: 's3-c13', text: 'Sem falar sem parar' },
+              { id: 's3-c14', text: 'Sem pular pausas' },
+              { id: 's3-c15', text: 'Plano de contingência: Parar, reduzir estímulo, voltar 1 etapa, pausar, ou encerrar.' },
+            ]
+          }
         ]
       }
     ],
