@@ -57,17 +57,20 @@ export const courseSteps: Step[] = [
             type: 'info',
             title: 'Informações Básicas',
             icon: 'Info',
-            content: ['É um “aquecimento emocional” de 3 a 6 minutos para o cachorro baixar a agitação antes do banho. Em vez de cansar com corrida e brincadeiras agitadas, usamos farejar, lamber/roer devagar e um sinal de começar (subir sozinho num tapetinho). Assim ele entra no box mais tranquilo e colaborativo.'],
+            content: [
+              'Objetivo: baixar o nível de excitação para o cão entrar mais calmo no box.',
+              'É um “aquecimento emocional” de 3 a 6 minutos para o cachorro baixar a agitação antes do banho. Em vez de cansar com corrida e brincadeiras agitadas, usamos farejar, lamber/roer devagar e um sinal de começar (subir sozinho num tapetinho). Assim ele entra no box mais tranquilo e colaborativo.'
+            ],
           },
           {
             type: 'faq',
             title: 'Dúvidas Comuns',
             icon: 'HelpCircle',
             content: [
-              'Preciso gastar a energia do meu cão antes do banho? Sim, mas com atividades que gastem energia mental (farejar, mastigar/lamber) e não com alta excitação (bola, pega-pega).',
-              'E se eu der um passeio rápido? Pode, se for um passeio olfativo (curto, em ritmo lento, deixando cheirar), evitando corrida e puxões.',
-              'Meu cão não liga para petiscos quando está ansioso. E agora? Afaste-se 1-2m do box, comece com farejo e use um petisco mais saboroso. Se ainda recusar, pare e tente em outro horário.',
-              'Quanto tempo dura? 3 a 6 minutos (cães sensíveis: 6 a 8 min). O mais importante é observar o corpo do cão relaxado e aceitando petiscos.'
+              '“Preciso gastar a energia do meu cão antes do banho?” Sim, mas não com brincadeiras de alta excitação (bola, pega-pega, cabo de guerra). Isso eleva adrenalina e dificulta a calma. Prefira gastar energia mental: farejar e mastigar/lamber.',
+              '“E se eu der um passeio rápido?” Pode, se for passeio olfativo (curto, em ritmo lento, deixando cheirar). Evite corrida e puxões.',
+              '“Meu cão não liga para petiscos quando está ansioso. E agora?” Afaste do box 1–2 m, comece com farejo mais longe e use um petisco mais saboroso. Se ainda recusar, pare hoje e tente outro horário.',
+              'Quanto tempo dura? 3–6 min (sensíveis: 6–8 min). Mais importante que o relógio é ver corpo solto e aceitando petisco.'
             ],
           },
           {
@@ -75,11 +78,11 @@ export const courseSteps: Step[] = [
             title: 'Principais Erros',
             icon: 'AlertTriangle',
             content: [
-              'Brincadeira agitada antes do banho: Deixa o cão "aceso". Troque por farejar e lamber/roer devagar.',
-              'Não checar o estado emocional: Começar com o cão já tenso. Analise o comportamento dele antes.',
-              'Água ligada durante a descompressão: O barulho aumenta o alerta. Mantenha a água desligada nesta fase.',
-              'Chão escorregadio: Aumenta a tensão. Use um tapete antiderrapante no box.',
-              'Deixar roer/lamber por tempo demais: Perde o foco e valor do prêmio. Interrompa após 60-90 segundos.'
+              'Brincadeira agitada antes do banho (bola, pega-pega, cabo de guerra): Atrapalha - deixa o cachorro “aceso”. Corrija - troque por farejar e lamber/roer devagar.',
+              'Não checar o estado emocional: Atrapalha - você começa com ele já tenso. Corrija - Analise o comportamento do cachorro conforme as orientações que serão passadas.',
+              'Água ligada durante a descompressão: Atrapalha - barulho e respingos aumentam alerta. Corrija - água sempre desligada até terminar esta fase.',
+              'Chão escorregadio: Atrapalha - medo de escorregar aumenta a tensão. Corrija - tapete antiderrapante já colocado dentro do box.',
+              'Deixar roer/lamber por tempo demais: Atrapalha - perde foco e valor do prêmio. Corrija - 60 a 90 segundos e interrompa ainda com vontade.'
             ],
           },
         ],
@@ -93,11 +96,11 @@ export const courseSteps: Step[] = [
             title: 'Passo a Passo (3 a 6 minutos)',
             icon: 'CheckSquare',
             content: [
-              '1. Medidor de calma (45s): Ofereça 1 micro-petisco. Se pegar e o corpo estiver solto, continue. Se lamber o focinho, vá mais devagar. Se recusar, afaste-se e tente um farejo fácil; se persistir, encerre por hoje.',
-              '2. Farejo fácil (2min): A 1,5-2m do chuveiro, espalhe 6-10 micro-petiscos em locais fáceis. Se ele farejar bem, aproxime-se do chuveiro gradualmente.',
-              '3. Lamber/Roer devagar (1min): Ofereça um brinquedo de lamber ou mordedor macio. Interrompa antes que ele enjoe e dê um micro-petisco.',
-              '4. Sinal de começar (20s x3): Coloque um tapetinho a 1m do chuveiro. Quando ele subir sozinho, elogie e dê um micro-petisco. Repita 3 vezes. Na última, coloque o tapete dentro do box.',
-              '5. Entrar no box: Com a água desligada, convide-o a entrar. Dê 2-3 micro-petiscos no tapete antiderrapante. Se ficar tenso, saia e faça mais 30-45s de farejo antes de tentar novamente.',
+              '1º Passo: Medidor de calma (45s): Ofereça 1 micro-petisco. Se pegar e o corpo estiver solto, continue (nota 1). Se lamber o focinho, vá mais devagar (nota 2). Se recusar, afaste-se, tente um farejo fácil; persistindo, encerre (nota 3).',
+              '2º Passo: Farejo fácil (2min): A 1,5-2m do chuveiro, espalhe 6-10 micro-petiscos em locais fáceis. Se farejar bem, aproxime-se do chuveiro.',
+              '3º Passo: Lamber/Roer devagar (1min): Ofereça um brinquedo de lamber ou mordedor macio. Interrompa antes que ele enjoe e dê um micro-petisco.',
+              '4º Passo: Sinal de começar (20s x3): Coloque um tapetinho a 1m do chuveiro. Quando ele subir sozinho, elogie e dê um micro-petisco. Repita 3x. Na última, coloque o tapete dentro do box.',
+              '5º Passo: Entrar no box: Com a água desligada, convide-o a entrar. Dê 2-3 micro-petiscos no tapete antiderrapante. Se ficar tenso, saia e faça 30-45s de farejo antes de tentar novamente.',
             ],
           },
           {
@@ -125,29 +128,69 @@ export const courseSteps: Step[] = [
   },
   {
     id: 'step-2',
-    title: 'Acalmando o Cão',
-    description: 'Transforme medo em confiança.',
-    longDescription: 'A forma como você introduz o cão ao ambiente do banho é crucial. Use técnicas de reforço positivo para criar uma associação agradável com o local.',
+    title: '2º Passo - Ambiente Previsível',
+    description: 'Remova gatilhos e torne o ambiente previsível.',
+    longDescription: 'O objetivo é remover gatilhos de medo/fuga e deixar o ambiente previsível. Medo de escorregar, água fria/quente demais e barulho antecipado sabotam a cooperação.',
     icon: Heart,
     image: placeholderImage('step2'),
     stages: [
       {
         id: 's2-stage1',
-        title: 'Introdução Positiva',
+        title: 'Teoria',
+        blocks: [
+          {
+            type: 'info',
+            title: 'Informações Básicas',
+            icon: 'Info',
+            content: [
+              'Objetivo: remover gatilhos de medo/fuga e deixar o ambiente previsível.',
+              'Por que importa: medo de escorregar, água fria/quente demais e barulho antecipado sabotam a cooperação.',
+              'É a etapa de tirar os sustos do ambiente (escorregar, barulho, água gelada/quente demais) e apresentar tudo de forma previsível. A regra é: mostrar primeiro sem assustar, depois avançar aos poucos.'
+            ],
+          },
+          {
+            type: 'faq',
+            title: 'Dúvidas Comuns',
+            icon: 'HelpCircle',
+            content: [
+              'Precisa ligar a água já? Não. Primeiro deixe o cão seguro no espaço (chão firme, sem ruídos). A água entra só depois do ambiente estar tranquilo.',
+              'Qual temperatura usar? Morna confortável. Teste no pulso: não pode queimar, nem gelar. Tem que parecer neutra.',
+              'Pressão forte é melhor pra enxaguar mais rápido? Não. Comece fraco, com um filete fino. Velocidade vem depois.',
+              'Mostro a duchinha no corpo logo? Não. Primeiro duchinha desligada; depois pingos no tapete, depois filete nas patas.'
+            ],
+          },
+        ],
+      },
+      {
+        id: 's2-stage2',
+        title: 'Prática',
         blocks: [
           {
             type: 'guide',
-            title: 'Passo a Passo',
+            title: 'Passo a Passo (1 a 3 minutos)',
             icon: 'CheckSquare',
-            content: ['Leve o cão ao banheiro com a água desligada. Dê petiscos e elogie.', 'Repita o processo, ligando a água brevemente sem molhá-lo, sempre associando com petiscos.'],
+            content: [
+              '1º Passo: Preparar o espaço (30-60s): Tapete antiderrapante no box, toalha à mão, água desligada e sem ruídos bruscos.',
+              '2º Passo: Teste de piso (10-20s): Deixe o cão entrar e parar no tapete. Se hesitar, reforce a entrada com um petisco.',
+              '3º Passo: Apresentação da duchinha desligada (10-20s): Mostre e toque o cão com a duchinha, observando se ele permanece relaxado.',
+              '4º Passo: Pingos no tapete (10-20s): Ligue a água fraca, deixe pingar no tapete (longe do cão) e reforce com petisco.',
+              '5º Passo: Ajuste de temperatura (10-20s): Com a água pingando, ajuste para morna, testando no seu pulso.',
+              '6º Passo: Filete fino nas patas (10-30s): Direcione o filete para as patas dianteiras, pare, reforce, e repita nas traseiras.',
+              '7º Passo: Pausa e decisão (5-10s): Se o cão estiver calmo, avance. Se tenso, desligue a água e volte um passo.'
+            ],
           },
           {
             type: 'checklist',
-            title: 'Checklist de Ações',
+            title: 'Checklist - Ambiente Previsível',
             icon: 'ListChecks',
             items: [
-              { id: 's2-c1', text: 'Levar o cão ao banheiro (seco) e dar petisco' },
-              { id: 's2-c2', text: 'Ligar a água (sem molhar) e dar petisco' },
+              { id: 's2-c1', text: 'Espaço preparado (tapete, toalha, sem ruídos)' },
+              { id: 's2-c2', text: 'Cão entra no box e pisa firme no tapete' },
+              { id: 's2-c3', text: 'Apresentação da duchinha desligada foi bem aceita' },
+              { id: 's2-c4', text: 'Cão calmo com o som de pingos de água no tapete' },
+              { id: 's2-c5', text: 'Temperatura da água ajustada para morna' },
+              { id: 's2-c6', text: 'Filete de água nas patas foi bem tolerado' },
+              { id: 's2-c7', text: 'Pausa realizada e cão avaliado como calmo para prosseguir' },
             ],
           },
         ]
