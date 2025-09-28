@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "step1",
+      "description": "A well-organized bathroom with dog shampoo and towels ready for a bath.",
+      "imageUrl": "https://images.unsplash.com/photo-1573162274701-6f12588e35b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvcmdhbml6ZWQlMjBiYXRocm9vbXxlbnwwfHx8fDE3NTkwNTc3MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "organized bathroom"
+    },
+    {
+      "id": "step2",
+      "description": "A person gently petting a calm dog near a bathtub.",
+      "imageUrl": "https://images.unsplash.com/photo-1747987445879-a609a7947d68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYWxtJTIwZG9nfGVufDB8fHx8MTc1OTA1NzcwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "calm dog"
+    },
+    {
+      "id": "step3",
+      "description": "A happy, wet dog being gently washed in a bathtub.",
+      "imageUrl": "https://images.unsplash.com/photo-1617400284860-1a36cc70f088?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZG9nJTIwYmF0aHxlbnwwfHx8fDE3NTkwNTc3MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dog bath"
+    },
+    {
+      "id": "step4",
+      "description": "A fluffy, clean dog wrapped in a towel receiving a treat.",
+      "imageUrl": "https://images.unsplash.com/photo-1686928124138-a69b398dd657?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb2clMjB0b3dlbHxlbnwwfHx8fDE3NTkwNTc3MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dog towel"
+    }
+  ]
 }
