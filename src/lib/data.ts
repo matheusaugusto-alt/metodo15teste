@@ -10,7 +10,7 @@ export type ChecklistItem = {
 export type ContentBlock = {
   type: 'info' | 'faq' | 'guide' | 'checklist';
   title: string;
-  icon: LucideIcon;
+  icon: keyof typeof iconMap;
   content?: string[];
   items?: ChecklistItem[];
 };
@@ -56,13 +56,13 @@ export const courseSteps: Step[] = [
           {
             type: 'info',
             title: 'Informações Básicas',
-            icon: Info,
+            icon: 'Info',
             content: ['Reúna todos os materiais antes de começar: toalhas, shampoo específico para cães, condicionador (se necessário) e petiscos.'],
           },
           {
             type: 'checklist',
             title: 'Checklist de Materiais',
-            icon: ListChecks,
+            icon: 'ListChecks',
             items: [
               { id: 's1-c1', text: 'Shampoo para cães' },
               { id: 's1-c2', text: 'Toalhas (mínimo 2)' },
@@ -73,7 +73,7 @@ export const courseSteps: Step[] = [
           {
             type: 'faq',
             title: 'Dúvidas Comuns',
-            icon: HelpCircle,
+            icon: 'HelpCircle',
             content: ['Posso usar meu shampoo? Não, o pH da pele dos cães é diferente e shampoos humanos podem causar irritação.'],
           },
         ],
@@ -85,7 +85,7 @@ export const courseSteps: Step[] = [
           {
             type: 'guide',
             title: 'Passo a Passo',
-            icon: CheckSquare,
+            icon: 'CheckSquare',
             content: ['Coloque um tapete antiderrapante no fundo da banheira ou box para evitar que o cão escorregue.', 'Ajuste a temperatura da água para morna. Teste no seu pulso antes de molhar o cão.'],
           },
         ]
@@ -107,13 +107,13 @@ export const courseSteps: Step[] = [
           {
             type: 'guide',
             title: 'Passo a Passo',
-            icon: CheckSquare,
+            icon: 'CheckSquare',
             content: ['Leve o cão ao banheiro com a água desligada. Dê petiscos e elogie.', 'Repita o processo, ligando a água brevemente sem molhá-lo, sempre associando com petiscos.'],
           },
           {
             type: 'checklist',
             title: 'Checklist de Ações',
-            icon: ListChecks,
+            icon: 'ListChecks',
             items: [
               { id: 's2-c1', text: 'Levar o cão ao banheiro (seco) e dar petisco' },
               { id: 's2-c2', text: 'Ligar a água (sem molhar) e dar petisco' },
@@ -138,7 +138,7 @@ export const courseSteps: Step[] = [
           {
             type: 'guide',
             title: 'Passo a Passo',
-            icon: CheckSquare,
+            icon: 'CheckSquare',
             content: [
               'Molhe o corpo do cão, evitando a cabeça e o rosto.', 
               'Aplique o shampoo e massageie suavemente.', 
@@ -149,7 +149,7 @@ export const courseSteps: Step[] = [
           {
             type: 'checklist',
             title: 'Checklist do Banho',
-            icon: ListChecks,
+            icon: 'ListChecks',
             items: [
               { id: 's3-c1', text: 'Molhar o corpo' },
               { id: 's3-c2', text: 'Aplicar e massagear shampoo' },
@@ -176,7 +176,7 @@ export const courseSteps: Step[] = [
           {
             type: 'guide',
             title: 'Passo a Passo',
-            icon: CheckSquare,
+            icon: 'CheckSquare',
             content: [
               'Envolva o cão em uma toalha e seque-o gentilmente, sem esfregar.',
               'Ofereça muitos elogios, carinho e um petisco especial ou brinquedo.',
@@ -186,7 +186,7 @@ export const courseSteps: Step[] = [
           {
             type: 'checklist',
             title: 'Checklist Final',
-            icon: ListChecks,
+            icon: 'ListChecks',
             items: [
               { id: 's4-c1', text: 'Secar com toalha' },
               { id: 's4-c2', text: 'Elogiar e dar carinho' },
@@ -196,7 +196,7 @@ export const courseSteps: Step[] = [
            {
             type: 'faq',
             title: 'Dúvidas Comuns',
-            icon: HelpCircle,
+            icon: 'HelpCircle',
             content: ['Com que frequência devo dar banho? Depende da raça e do estilo de vida, mas geralmente a cada 1-3 meses é suficiente para não ressecar a pele.'],
           },
         ]
@@ -204,3 +204,10 @@ export const courseSteps: Step[] = [
     ],
   },
 ];
+
+export const iconMap = {
+  Info,
+  HelpCircle,
+  ListChecks,
+  CheckSquare
+};
