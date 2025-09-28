@@ -234,15 +234,15 @@ export const courseSteps: Step[] = [
             ]
           },
           {
-            type: 'info',
+            type: 'errors',
             title: 'Aviso: Molhar por partes?',
             icon: 'AlertTriangle',
             content: [
-              'Em cães ansiosos (banho comum): Melhor fazer por partes (ciclos curtos): molhar → ensaboar → enxaguar uma região de cada vez (traseiro/cauda → dorso/laterais → peito/pescoço → patas; rosto no pano úmido no final).',
-              'Por quê? Reduz o tempo contínuo de água em cima do cão (menos estresse). Dá pausas programadas entre regiões (respira, lambe/ganha micro-petisco). Mantém previsibilidade: “termino aqui, pauso, depois a próxima parte”.',
-              'Dica prática (fluxo híbrido): antes de começar os ciclos, faça um pré-molhado leve e rápido no corpo (exceto cabeça) por 10–20 s, só para tirar o “choque” do primeiro jato. Depois siga nos ciclos por região.',
-              'Em cães tranquilos/experientes (banho comum): Pode molhar o corpo todo, ensaboar todo, e depois enxaguar todo — desde que: Você mantenha o ritmo (sem demorar com o shampoo parado na pele), a água esteja morna e com pressão baixa/média, e haja poucas pausas e o cão não mostre sinais de incômodo.',
-              'Quando não fazer “por partes”: Shampoo terapêutico/medicado (dermatite, antipruriginoso etc.): quase sempre precisa de contato no corpo todo por X minutos (rótulo). O fluxo indicado é: Pré-molhar rápido o corpo (sem rosto). Aplicar shampoo diluído em todo o corpo (evitar olhos/narinas). Aguardar o tempo de contato (ex.: 5–10 min), água desligada, usando pausas curtas com lambe-lambe para manter o cão calmo. Enxaguar muito bem, de preferência por zonas (para garantir remoção total). Pelagem muito densa/longa com muita sujeira: espalhar o shampoo no corpo todo ajuda a penetrar melhor; depois enxágue caprichado por zonas.'
+                'Em cães ansiosos (banho comum): Melhor fazer por partes (ciclos curtos): molhar → ensaboar → enxaguar uma região de cada vez (traseiro/cauda → dorso/laterais → peito/pescoço → patas; rosto no pano úmido no final).',
+                'Por quê? Reduz o tempo contínuo de água em cima do cão (menos estresse). Dá pausas programadas entre regiões (respira, lambe/ganha micro-petisco). Mantém previsibilidade: “termino aqui, pauso, depois a próxima parte”.',
+                'Dica prática (fluxo híbrido): antes de começar os ciclos, faça um pré-molhado leve e rápido no corpo (exceto cabeça) por 10–20 s, só para tirar o “choque” do primeiro jato. Depois siga nos ciclos por região.',
+                'Em cães tranquilos/experientes (banho comum): Pode molhar o corpo todo, ensaboar todo, e depois enxaguar todo — desde que: Você mantenha o ritmo (sem demorar com o shampoo parado na pele), a água esteja morna e com pressão baixa/média, e haja poucas pausas e o cão não mostre sinais de incômodo.',
+                'Quando não fazer “por partes”: Shampoo terapêutico/medicado (dermatite, antipruriginoso etc.): quase sempre precisa de contato no corpo todo por X minutos (rótulo). O fluxo indicado é: Pré-molhar rápido o corpo (sem rosto). Aplicar shampoo diluído em todo o corpo (evitar olhos/narinas). Aguardar o tempo de contato (ex.: 5–10 min), água desligada, usando pausas curtas com lambe-lambe para manter o cão calmo. Enxaguar muito bem, de preferência por zonas (para garantir remoção total). Pelagem muito densa/longa com muita sujeira: espalhar o shampoo no corpo todo ajuda a penetrar melhor; depois enxágue caprichado por zonas.'
             ]
           }
         ]
@@ -296,7 +296,7 @@ export const courseSteps: Step[] = [
   },
   {
     id: 'step-4',
-    title: 'Pós-Banho e Recompensa',
+    title: '4º Passo — Tolerância e Secagem',
     description: 'Finalize com carinho e diversão.',
     longDescription: 'A experiência do banho não termina quando a água desliga. A secagem e a recompensa final são essenciais para selar a experiência positiva.',
     icon: Award,
@@ -304,34 +304,71 @@ export const courseSteps: Step[] = [
     stages: [
       {
         id: 's4-stage1',
-        title: 'Secagem e Celebração',
+        title: 'Teoria',
         blocks: [
           {
-            type: 'guide',
-            title: 'Passo a Passo',
-            icon: 'CheckSquare',
+            type: 'info',
+            title: 'Informações Básicas',
+            icon: 'Info',
             content: [
-              'Envolva o cão em uma toalha e seque-o gentilmente, sem esfregar.',
-              'Ofereça muitos elogios, carinho e um petisco especial ou brinquedo.',
-              'Se usar secador, mantenha-o na temperatura fria ou morna e a uma distância segura.'
-            ],
+              'É a etapa para manter o cão ocupado e seguro enquanto ele se acostuma aos estímulos mais difíceis do pós-banho: secador, toques em áreas sensíveis e ruídos.',
+              'Usamos lamber/roer devagar como “âncora de calma” e subimos o estímulo em passos curtos, sem sustos.',
+              'Quando usar: Cão se assusta com secador ou barulho; Reclama com toques em patas/cabeça; Precisa secar com soprador (pelagem densa/longa).'
+            ]
           },
           {
-            type: 'checklist',
-            title: 'Checklist Final',
-            icon: 'ListChecks',
-            items: [
-              { id: 's4-c1', text: 'Secar com toalha' },
-              { id: 's4-c2', text: 'Elogiar e dar carinho' },
-              { id: 's4-c3', text: 'Oferecer recompensa final (petisco/brinquedo)' },
-            ],
-          },
-           {
             type: 'faq',
             title: 'Dúvidas Comuns',
             icon: 'HelpCircle',
-            content: ['Com que frequência devo dar banho? Depende da raça e do estilo de vida, mas geralmente a cada 1-3 meses é suficiente para não ressecar a pele.'],
+            content: [
+              'Preciso usar secador sempre? Não. Se a pelagem for curta e o clima ajudar, toalha já resolve. Use secador quando for necessário (pelagem densa/tempo frio).',
+              'Qual a temperatura do ar? Morno confortável. O que seca é o fluxo de ar, não calor parado.',
+              'Começo soprando a cabeça? Não. Cabeça e orelhas ficam por último ou fora; seque com toalha/pano.',
+              'Lamber não vai “empanturrar”? Não, se for camada fina e por tempo curto (recolher antes de enjoar).',
+              'E se ele tiver medo do barulho? Comece longe e fraco, com micro-janelas de 30–60 s. Suba de nível só se estiver calmo.'
+            ]
+          }
+        ]
+      },
+      {
+        id: 's4-stage2',
+        title: 'Prática',
+        blocks: [
+          {
+            type: 'guide',
+            title: 'Como aplicar a tolerância:',
+            icon: 'CheckSquare',
+            content: [
+              'Passe camada fina no lambe-lambe/brinquedo estável. Opções seguras: iogurte sem açúcar, abóbora cozida amassada, patê canino, ração umedecida.',
+              'Deixe 40–60 s e recolha no 80% do interesse (antes de enjoar).',
+              'Quanto oferecer (camada fina): P (≤10 kg): 1–2 colheres de chá; M (11–25 kg): 2–3 colheres de chá; G (≥26 kg): 3–4 colheres de chá.',
+              'Momentos recomendados: Entrada da secagem: 40–60 s; No meio (se precisar): 20–30 s; Finalização: 20–30 s enquanto troca para toalha.'
+            ]
           },
+          {
+            type: 'guide',
+            title: 'Como fazer a secagem (Escadinha do secador)',
+            icon: 'CheckSquare',
+            content: [
+              'Suba de nível apenas se o cão estiver calmo, aceitando petisco e com corpo solto.',
+              'Nível 0 — Aparelho desligado (20–30 s): Secador visível na mão; cão lambe/roe à vontade. Calmo? → próximo.',
+              'Nível 1 — Ligado longe, ar para longe (30–60 s): Barulho ao fundo, sem vento nele. Se tensionar: pausa, volte ao 0.',
+              'Nível 2 — Ar na mão do tutor (30–60 s): A mão vira “escudo”; vento bate na mão a 30–50 cm do cão. Calmo? → próximo.',
+              'Nível 3 — Dorso/laterais, longe (10–20 s): Ar em movimento, a >30 cm, passadas curtas. Nunca parar ar quente no mesmo ponto.',
+              'Nível 4 — Mais perto, áreas menos sensíveis (20–30 s): A 20–30 cm, varredura rápida em dorso/laterais. Patas e cabeça por último (ou só toalha).',
+            ]
+          },
+          {
+            type: 'checklist',
+            title: 'Se algo sair do plano',
+            icon: 'ListChecks',
+            items: [
+                { id: 's4-c1', text: 'Desligar, fazer pausa' },
+                { id: 's4-c2', text: 'Voltar 1 nível' },
+                { id: 's4-c3', text: 'Repor lamber 20–30 s' },
+                { id: 's4-c4', text: 'Persistiu? Encerrar e treinar “a seco” em outro momento' }
+            ]
+          }
         ]
       }
     ],
