@@ -25,20 +25,22 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
   );
 
   return (
-    <div className="container mx-auto max-w-4xl p-4 md:p-8">
-      <div className="mb-8">
-        <div className="flex items-center gap-4">
-          <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
-            <step.icon className="h-6 w-6" />
+    <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="mb-8 sm:mb-12">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary flex-shrink-0">
+            <step.icon className="h-7 w-7" />
           </div>
-          <h1 className="font-headline text-3xl md:text-4xl font-bold text-foreground">
-            {step.title}
-          </h1>
+          <div>
+            <h1 className="font-headline text-3xl md:text-4xl font-bold text-foreground leading-tight">
+              {step.title}
+            </h1>
+            <p className="mt-2 text-lg text-muted-foreground">{step.longDescription}</p>
+          </div>
         </div>
-        <p className="mt-4 text-lg text-muted-foreground">{step.longDescription}</p>
         
         {allChecklistItems.length > 0 && (
-          <div className="mt-6">
+          <div className="mt-8">
             <h3 className="text-sm font-medium text-muted-foreground mb-2">Progresso da Etapa</h3>
             <StepProgress items={allChecklistItems} />
           </div>
@@ -46,9 +48,9 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
       </div>
 
       <Tabs defaultValue={step.stages[0].id} className="w-full">
-        <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <TabsList className="w-full h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {step.stages.map((stage) => (
-            <TabsTrigger key={stage.id} value={stage.id}>
+            <TabsTrigger key={stage.id} value={stage.id} className="text-sm">
               {stage.title}
             </TabsTrigger>
           ))}

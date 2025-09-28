@@ -6,36 +6,38 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
-      <main className="container mx-auto px-4 py-8 sm:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="text-center md:text-left">
-            <div className="inline-block bg-primary/10 p-3 rounded-xl mb-4">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="text-center lg:text-left">
+            <div className="inline-block bg-primary/10 p-3 rounded-2xl mb-4">
               <PawPrint className="h-8 w-8 text-primary" />
             </div>
-            <h1 className="font-headline text-4xl sm:text-5xl lg:text-6xl font-extrabold text-foreground tracking-tighter">
+            <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground tracking-tighter">
               Bath Time Bliss
             </h1>
-            <p className="mt-4 text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0">
+            <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
               Um guia passo a passo para transformar a hora do banho do seu cão em um momento de calma e conexão.
             </p>
           </div>
-          <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden shadow-2xl shadow-primary/20">
+          <div className="relative h-80 lg:h-full min-h-[300px] rounded-3xl overflow-hidden shadow-2xl shadow-primary/20">
             <Image
               src="https://images.unsplash.com/photo-1599422488313-25586b2648d4?q=80&w=2070&auto=format&fit=crop"
               alt="Happy dog getting a bath"
               fill
+              priority
               className="object-cover"
               data-ai-hint="happy dog"
             />
+             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
           </div>
         </div>
 
-        <div className="mt-20 sm:mt-24">
-          <div className="text-center mb-12">
+        <div className="mt-20 sm:mt-28">
+          <div className="text-center mb-12 sm:mb-16">
             <h2 className="font-headline text-3xl sm:text-4xl font-bold text-foreground">
               Comece sua jornada
             </h2>
-            <p className="mt-2 text-lg text-muted-foreground">Siga nossos 4 passos para um banho tranquilo.</p>
+            <p className="mt-3 text-lg text-muted-foreground max-w-2xl mx-auto">Siga nossos 4 passos para um banho tranquilo e uma experiência positiva para seu pet.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {courseSteps.map((step, index) => (
