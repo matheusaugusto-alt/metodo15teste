@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Home, Heart, ShowerHead, Award, Info, HelpCircle, ListChecks, CheckSquare } from 'lucide-react';
+import { Home, Heart, ShowerHead, Award, Info, HelpCircle, ListChecks, CheckSquare, AlertTriangle } from 'lucide-react';
 import { PlaceHolderImages } from './placeholder-images';
 
 export type ChecklistItem = {
@@ -8,7 +8,7 @@ export type ChecklistItem = {
 };
 
 export type ContentBlock = {
-  type: 'info' | 'faq' | 'guide' | 'checklist';
+  type: 'info' | 'faq' | 'guide' | 'checklist' | 'errors';
   title: string;
   icon: keyof typeof iconMap;
   content?: string[];
@@ -43,50 +43,81 @@ const placeholderImage = (id: string) => {
 export const courseSteps: Step[] = [
   {
     id: 'step-1',
-    title: 'Preparação do Ambiente',
-    description: 'Crie um spa canino em casa.',
-    longDescription: 'Preparar o ambiente é o primeiro passo para garantir que a hora do banho seja uma experiência positiva e sem estresse tanto para você quanto para o seu cão.',
+    title: '1º Passo - Descompressão',
+    description: 'Acalme seu cão antes do banho.',
+    longDescription: 'O objetivo é baixar o nível de excitação para o cão entrar mais calmo no box. Este é um "aquecimento emocional" para diminuir a agitação antes do banho.',
     icon: Home,
     image: placeholderImage('step1'),
     stages: [
       {
         id: 's1-stage1',
-        title: 'Organização',
+        title: 'Teoria',
         blocks: [
           {
             type: 'info',
             title: 'Informações Básicas',
             icon: 'Info',
-            content: ['Reúna todos os materiais antes de começar: toalhas, shampoo específico para cães, condicionador (se necessário) e petiscos.'],
-          },
-          {
-            type: 'checklist',
-            title: 'Checklist de Materiais',
-            icon: 'ListChecks',
-            items: [
-              { id: 's1-c1', text: 'Shampoo para cães' },
-              { id: 's1-c2', text: 'Toalhas (mínimo 2)' },
-              { id: 's1-c3', text: 'Petiscos de alto valor' },
-              { id: 's1-c4', text: 'Tapete antiderrapante' },
-            ],
+            content: ['É um “aquecimento emocional” de 3 a 6 minutos para o cachorro baixar a agitação antes do banho. Em vez de cansar com corrida e brincadeiras agitadas, usamos farejar, lamber/roer devagar e um sinal de começar (subir sozinho num tapetinho). Assim ele entra no box mais tranquilo e colaborativo.'],
           },
           {
             type: 'faq',
             title: 'Dúvidas Comuns',
             icon: 'HelpCircle',
-            content: ['Posso usar meu shampoo? Não, o pH da pele dos cães é diferente e shampoos humanos podem causar irritação.'],
+            content: [
+              'Preciso gastar a energia do meu cão antes do banho? Sim, mas com atividades que gastem energia mental (farejar, mastigar/lamber) e não com alta excitação (bola, pega-pega).',
+              'E se eu der um passeio rápido? Pode, se for um passeio olfativo (curto, em ritmo lento, deixando cheirar), evitando corrida e puxões.',
+              'Meu cão não liga para petiscos quando está ansioso. E agora? Afaste-se 1-2m do box, comece com farejo e use um petisco mais saboroso. Se ainda recusar, pare e tente em outro horário.',
+              'Quanto tempo dura? 3 a 6 minutos (cães sensíveis: 6 a 8 min). O mais importante é observar o corpo do cão relaxado e aceitando petiscos.'
+            ],
+          },
+          {
+            type: 'errors',
+            title: 'Principais Erros',
+            icon: 'AlertTriangle',
+            content: [
+              'Brincadeira agitada antes do banho: Deixa o cão "aceso". Troque por farejar e lamber/roer devagar.',
+              'Não checar o estado emocional: Começar com o cão já tenso. Analise o comportamento dele antes.',
+              'Água ligada durante a descompressão: O barulho aumenta o alerta. Mantenha a água desligada nesta fase.',
+              'Chão escorregadio: Aumenta a tensão. Use um tapete antiderrapante no box.',
+              'Deixar roer/lamber por tempo demais: Perde o foco e valor do prêmio. Interrompa após 60-90 segundos.'
+            ],
           },
         ],
       },
       {
         id: 's1-stage2',
-        title: 'Segurança',
+        title: 'Prática',
         blocks: [
           {
             type: 'guide',
-            title: 'Passo a Passo',
+            title: 'Passo a Passo (3 a 6 minutos)',
             icon: 'CheckSquare',
-            content: ['Coloque um tapete antiderrapante no fundo da banheira ou box para evitar que o cão escorregue.', 'Ajuste a temperatura da água para morna. Teste no seu pulso antes de molhar o cão.'],
+            content: [
+              '1. Medidor de calma (45s): Ofereça 1 micro-petisco. Se pegar e o corpo estiver solto, continue. Se lamber o focinho, vá mais devagar. Se recusar, afaste-se e tente um farejo fácil; se persistir, encerre por hoje.',
+              '2. Farejo fácil (2min): A 1,5-2m do chuveiro, espalhe 6-10 micro-petiscos em locais fáceis. Se ele farejar bem, aproxime-se do chuveiro gradualmente.',
+              '3. Lamber/Roer devagar (1min): Ofereça um brinquedo de lamber ou mordedor macio. Interrompa antes que ele enjoe e dê um micro-petisco.',
+              '4. Sinal de começar (20s x3): Coloque um tapetinho a 1m do chuveiro. Quando ele subir sozinho, elogie e dê um micro-petisco. Repita 3 vezes. Na última, coloque o tapete dentro do box.',
+              '5. Entrar no box: Com a água desligada, convide-o a entrar. Dê 2-3 micro-petiscos no tapete antiderrapante. Se ficar tenso, saia e faça mais 30-45s de farejo antes de tentar novamente.',
+            ],
+          },
+          {
+            type: 'checklist',
+            title: 'Checklist Completo - Descompressão',
+            icon: 'ListChecks',
+            items: [
+              { id: 's1-c1', text: 'Água desligada' },
+              { id: 's1-c2', text: 'Tapete antiderrapante no box' },
+              { id: 's1-c3', text: '10–12 micro-petiscos separados' },
+              { id: 's1-c4', text: 'Brinquedo de lamber ou mordedor à mão' },
+              { id: 's1-c5', text: 'Tapetinho de sinal pronto' },
+              { id: 's1-c6', text: 'Medidor de calma checado (nota 1 ou 2)' },
+              { id: 's1-c7', text: 'Farejo realizado por 2-3 min' },
+              { id: 's1-c8', text: 'Lamber/Roer por 60-90s e interrompido' },
+              { id: 's1-c9', text: 'Sinal de começar repetido 3x' },
+              { id: 's1-c10', text: 'Entrada no box com reforço imediato' },
+              { id: 's1-c11', text: 'Plano B: Voltar 1 passo se necessário' },
+              { id: 's1-c12', text: 'Plano C: Encerrar se recusar 3x' },
+            ],
           },
         ]
       }
@@ -209,5 +240,6 @@ export const iconMap = {
   Info,
   HelpCircle,
   ListChecks,
-  CheckSquare
+  CheckSquare,
+  AlertTriangle
 };
