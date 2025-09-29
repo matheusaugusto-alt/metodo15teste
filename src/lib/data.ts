@@ -186,7 +186,7 @@ export const courseSteps: Step[] = [
               { id: 's2-c2', text: 'Cão entra no box e pisa firme no tapete' },
               { id: 's2-c3', text: 'Apresentação da duchinha desligada foi bem aceita' },
               { id: 's2-c4', text: 'Cão calmo com o som de pingos de água no tapete' },
-              { id: 's2-c5', text: 'Temperatura da água ajustada para morna' },
+              { id_ts: 's2-c5', text: 'Temperatura da água ajustada para morna' },
               { id: 's2-c6', text: 'Filete de água nas patas foi bem tolerado' },
               { id: 's2-c7', text: 'Pausa realizada e cão avaliado como calmo para prosseguir' },
             ],
@@ -281,7 +281,6 @@ export const courseSteps: Step[] = [
               { id: 's3-c9', text: 'Pausas de 30–45 s entre blocos' },
               { id: 's3-c10', text: 'Mão parede em quadril/ombro (nunca pescoço)' },
               { id: 's3-c12', text: 'Sem Jato no rosto' },
-              { id: 's3-c13', text: 'Sem falar sem parar' },
               { id: 's3-c14', text: 'Sem pular pausas' },
               { id: 's3-c15', text: 'Plano de contingência: Parar, reduzir estímulo, voltar 1 etapa, pausar, ou encerrar.' },
             ]
