@@ -80,7 +80,7 @@ export const courseSteps: Step[] = [
               '“Preciso gastar a energia do meu cão antes do banho?” Sim, mas não com brincadeiras de alta excitação (bola, pega-pega, cabo de guerra). Isso eleva adrenalina e dificulta a calma. Prefira gastar energia mental: farejar e mastigar/lamber.',
               '“E se eu der um passeio rápido?” Pode, se for passeio olfativo (curto, em ritmo lento, deixando cheirar). Evite corrida e puxões.',
               '“Meu cão não liga para petiscos quando está ansioso. E agora?” Afaste do box 1–2 m, comece com farejo mais longe e use um petisco mais saboroso. Se ainda recusar, pare hoje e tente outro horário.',
-              'Quanto tempo dura?: 3–6 min (sensíveis: 6–8 min). Mais importante que o relógio é ver corpo solto e aceitando petisco.'
+              '“Quanto tempo dura?” 3–6 min (sensíveis: 6–8 min). Mais importante que o relógio é ver corpo solto e aceitando petisco.'
             ],
           },
           {
