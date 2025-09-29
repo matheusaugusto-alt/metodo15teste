@@ -59,12 +59,17 @@ const ErrorsBlock = ({ content }: { content:string[] }) => {
       <div className="space-y-5">
         {content.map((item, index) => {
           const [error, rest] = item.split(': Atrapalha: ');
-          const [atrapalha, corrija] = rest.split('; Corrija: ');
+          let atrapalha = rest;
+          let corrija;
+
+          if (rest?.includes('; Corrija: ')) {
+            [atrapalha, corrija] = rest.split('; Corrija: ');
+          }
           
           return (
             <div key={index} className="flex flex-col gap-2 p-4 rounded-lg bg-red-500/10 border border-red-500/20">
                 <h4 className="font-semibold text-red-700">{error}</h4>
-                <p className="text-sm text-red-900/80"><span className='font-medium'>Atrapalha:</span> {atrapalha}</p>
+                {atrapalha && <p className="text-sm text-red-900/80"><span className='font-medium'>Atrapalha:</span> {atrapalha}</p>}
                 {corrija && (
                   <p className="text-sm text-green-800/90"><span className='font-medium text-green-700'>Corrija:</span> {corrija}</p>
                 )}
