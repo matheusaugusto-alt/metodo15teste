@@ -33,7 +33,7 @@ const getIconForType = (type: ContentBlock['type']) => {
 
 const QABlock = ({ content }: { content: string[] }) => {
     return (
-      <div className="space-y-4">
+      <div className="space-y-3">
         {content.map((item, index) => {
           const match = item.match(/“([^”]+)”(.*)/);
           if (!match) return null;
@@ -41,11 +41,11 @@ const QABlock = ({ content }: { content: string[] }) => {
           const [, question, answer] = match;
           return (
             <div key={index}>
-              <div className="group/q flex items-center gap-3 rounded-xl bg-blue-50 p-3 transition-transform duration-200 hover:-translate-y-0.5">
-                <HelpCircle className="h-6 w-6 flex-shrink-0 text-blue-800" />
-                <h4 className="font-headline text-base font-semibold text-blue-900">{question}</h4>
+              <div className="group/q flex items-center gap-3 rounded-xl bg-muted p-3 transition-transform duration-200 hover:-translate-y-0.5">
+                <HelpCircle className="h-6 w-6 flex-shrink-0 text-primary" />
+                <h4 className="font-headline text-base font-semibold text-primary">{question}</h4>
               </div>
-              <div className="mt-2 pl-4 border-l-4 border-primary/50 ml-4">
+              <div className="mt-2 pl-4 border-l-[3px] border-primary/70 ml-4">
                 <p className="py-2 text-foreground/80">{answer.trim()}</p>
               </div>
             </div>
@@ -68,9 +68,9 @@ const ErrorsBlock = ({ content }: { content: string[] }) => {
               <div>
                 <p className="font-medium text-foreground">{error}</p>
                 {correction && (
-                  <div className="mt-2 inline-flex items-center gap-2 rounded-lg bg-yellow-50 px-3 py-1 text-sm">
-                    <span className="font-semibold text-yellow-700">Correção:</span>
-                    <span className="text-yellow-800">{correction}</span>
+                  <div className="mt-2 inline-flex items-center gap-2 rounded-lg bg-yellow-50 px-3 py-1 text-sm border border-yellow-200">
+                    <span className="font-semibold text-yellow-800">Correção:</span>
+                    <span className="text-yellow-900">{correction}</span>
                   </div>
                 )}
               </div>
@@ -89,10 +89,10 @@ const InfoBlock = ({ content }: { content: string[] }) => {
     return (
         <div className="space-y-4">
             {tldr.length > 0 && (
-                 <div className="rounded-lg bg-blue-50 p-3">
+                 <div className="rounded-lg bg-muted p-3 border">
                     <div className="flex items-center gap-3">
-                        <Info className="h-5 w-5 flex-shrink-0 text-blue-800" />
-                        <p className="text-sm text-blue-900">{tldr[0]}</p>
+                        <Info className="h-5 w-5 flex-shrink-0 text-primary" />
+                        <p className="text-sm font-medium text-primary">{tldr[0]}</p>
                     </div>
                 </div>
             )}

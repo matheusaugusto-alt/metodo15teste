@@ -4,24 +4,24 @@
 
 @layer base {
   :root {
-    --background: 206 33% 97%; /* #F7FAFC */
-    --foreground: 221 39% 11%; /* #1F2937 */
+    --background: 210 20% 98%; /* #F5F7FA */
+    --foreground: 222 22% 10%; /* #111827 */
     --card: 0 0% 100%; /* #FFFFFF */
-    --card-foreground: 221 39% 11%;
+    --card-foreground: 222 22% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 221 39% 11%;
+    --popover-foreground: 222 22% 10%;
     --primary: 212 78% 52%; /* #2A7FDF */
     --primary-foreground: 0 0% 100%;
     --secondary: 41 100% 67%; /* #FFC45A */
-    --secondary-foreground: 221 39% 11%;
-    --muted: 215 28% 90%; /* #E6EAF0 */
-    --muted-foreground: 215 16% 47%; /* #6B7280 - derived */
-    --accent: 215 28% 93%; /* Lighter version of muted for hover */
-    --accent-foreground: 221 39% 11%;
+    --secondary-foreground: 222 22% 10%;
+    --muted: 214 33% 95%; /* #EEF5FF - Primary-50 */
+    --muted-foreground: 215 14% 27%; /* #374151 */
+    --accent: 214 33% 95%; /* Use Primary-50 for accent hover */
+    --accent-foreground: 222 22% 10%;
     --destructive: 0 63% 52%; /* #DC2F2F */
     --destructive-foreground: 0 0% 100%;
-    --border: 220 13% 91%; /* #E6EAF0 */
-    --input: 220 13% 91%;
+    --border: 213 27% 88%; /* #DCE3EC */
+    --input: 213 27% 88%;
     --ring: 212 78% 52%;
     --radius: 1rem; /* 16px */
     --chart-1: 212 78% 52%;
@@ -33,24 +33,24 @@
 
   .dark {
     --background: 220 44% 9%; /* #0B1220 */
-    --foreground: 210 40% 98%; /* #F8FAFC */
+    --foreground: 215 14% 90%; /* #E5E7EB */
     --card: 220 38% 11%; /* #101827 */
-    --card-foreground: 210 40% 98%;
+    --card-foreground: 215 14% 90%;
     --popover: 220 44% 9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 211 100% 65%; /* #4D9BFF */
-    --primary-foreground: 221 39% 11%;
+    --popover-foreground: 215 14% 90%;
+    --primary: 214 78% 57%; /* #3E8BE6 */
+    --primary-foreground: 222 22% 10%;
     --secondary: 41 100% 67%; /* #FFC45A */
-    --secondary-foreground: 221 39% 11%;
-    --muted: 221 28% 21%; /* #233046 */
-    --muted-foreground: 215 20% 65%; /* #CBD5E1 */
-    --accent: 221 28% 26%; /* Lighter version of muted for hover */
-    --accent-foreground: 210 40% 98%;
+    --secondary-foreground: 222 22% 10%;
+    --muted: 220 38% 11%; /* card color */
+    --muted-foreground: 216 14% 74%; /* #A7B0C0 */
+    --accent: 220 38% 15%; /* Lighter version of card for hover */
+    --accent-foreground: 215 14% 90%;
     --destructive: 0 63% 52%; /* #DC2F2F */
     --destructive-foreground: 0 0% 100%;
-    --border: 221 28% 21%; /* #233046 */
-    --input: 221 28% 21%;
-    --ring: 211 100% 65%;
+    --border: 220 28% 21%; /* #223049 */
+    --input: 220 28% 21%;
+    --ring: 214 78% 57%;
   }
 }
 
