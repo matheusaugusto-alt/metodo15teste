@@ -230,7 +230,7 @@ export const courseSteps: Step[] = [
           },
           {
             type: 'info',
-            title: 'Aviso: Molhar por partes?',
+            title: 'Aviso',
             icon: 'AlertTriangle',
             content: [
               'O banho precisa ser sempre molhar, ensaboar e enxaguar por partes?',
@@ -245,7 +245,6 @@ export const courseSteps: Step[] = [
               'Dica prática: Antes de começar os ciclos, faça um pré-molhado leve e rápido no corpo (exceto cabeça) por 10–20 s, só para tirar o “choque” do primeiro jato. Depois siga nos ciclos por região.',
               '',
               'Em cães tranquilos/experientes (banho comum); Pode molhar o corpo todo, ensaboar todo, e depois enxaguar todo — desde que:',
-              '',
               '- Você mantenha o ritmo (sem demorar com o shampoo parado na pele).',
               '- A água esteja morna e com pressão baixa/média.',
               '- Haja poucas pausas e o cão não mostre sinais de incômodo.'
@@ -368,3 +367,5 @@ export const iconMap = {
   CheckSquare,
   AlertTriangle
 };
+
+    
