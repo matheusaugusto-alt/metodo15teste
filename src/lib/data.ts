@@ -245,6 +245,7 @@ export const courseSteps: Step[] = [
                 'Dica prática: Antes de começar os ciclos, faça um pré-molhado leve e rápido no corpo (exceto cabeça) por 10–20 s, só para tirar o “choque” do primeiro jato. Depois siga nos ciclos por região.',
                 '',
                 'Em cães tranquilos/experientes (banho comum); Pode molhar o corpo todo, ensaboar todo, e depois enxaguar todo — desde que:',
+                '',
                 '- Você mantenha o ritmo (sem demorar com o shampoo parado na pele).',
                 '- A água esteja morna e com pressão baixa/média.',
                 '- Haja poucas pausas e o cão não mostre sinais de incômodo.'
@@ -256,7 +257,7 @@ export const courseSteps: Step[] = [
             icon: 'CheckSquare',
             items: [
               { id: 's3-g0a', title: 'Cuidados importantes', actions: ['Preparar: tapete antiderrapante, toalha à mão, água morna (testada no pulso), pressão fraca a média, shampoo diluído (se usar diluição, já pronto).'] },
-              { id: 's3-g0b', title: 'Guia para decidir se dá para continuar', actions: ['Verde (cooperando): corpo solto, aceita petisco → segue.', 'Amarelo (sinais leves): lamber lábios, inquieto → pausa 30–45 s, ofereça lamber (rapidamente) e retome mais leve.', 'Vermelho (fuga/rosnado): interrompa, reduza estímulo (menos jato/menos tempo), volte 1 etapa e recomece curto.'] },
+              { id: 's3-g0b', title: 'Guia para decidir se da para continuar', actions: ['Verde (cooperando): corpo solto, aceita petisco → segue.', 'Amarelo (sinais leves): lamber lábios, inquieto → pausa 30–45 s, ofereça lamber (rapidamente) e retome mais leve.', 'Vermelho (fuga/rosnado): interrompa, reduza estímulo (menos jato/menos tempo), volte 1 etapa e recomece curto.'] },
               { id: 's3-g1', title: 'Bloco 1: Traseiro/cauda', time: '40-60s', actions: ['Molhar, ensaboar e enxaguar a região.', 'Use a "mão parede" como apoio no quadril.'], hint: 'Após a ação, faça uma pausa de 30-45s com 1-2 micro-petiscos ou 20-30s de atividade de lamber.'},
               { id: 's3-g2', title: 'Bloco 2: Dorso e laterais', time: '40-60s', actions: ['Molhar, ensaboar e enxaguar, sempre de cima para baixo.', 'Use a "mão parede" como apoio no ombro.'], hint: 'Faça a mesma pausa de 30-45s do bloco anterior.'},
               { id: 's3-g3', title: 'Bloco 3: Peito e pescoço', time: '40-60s', actions: ['Molhar, ensaboar e enxaguar com cuidado.'], alert: 'Atenção para não direcionar o jato de água para o rosto. Faça uma pausa de 30-45s.'},
@@ -279,7 +280,6 @@ export const courseSteps: Step[] = [
               { id: 's3-c8', text: 'Blocos de 40–60 s de ação' },
               { id: 's3-c9', text: 'Pausas de 30–45 s entre blocos' },
               { id: 's3-c10', text: 'Mão parede em quadril/ombro (nunca pescoço)' },
-              { id: 's3-c11', text: 'Semáforo usado (verde/amarelo/vermelho)' },
               { id: 's3-c12', text: 'Sem Jato no rosto' },
               { id: 's3-c13', text: 'Sem falar sem parar' },
               { id: 's3-c14', text: 'Sem pular pausas' },
@@ -369,5 +369,7 @@ export const iconMap = {
   CheckSquare,
   AlertTriangle
 };
+
+    
 
     
