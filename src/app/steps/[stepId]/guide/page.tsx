@@ -1,6 +1,6 @@
 
 'use client';
-import { notFound, useRouter } from 'next/navigation';
+import { notFound, useRouter, useParams } from 'next/navigation';
 import { courseSteps } from '@/lib/data';
 import type { GuideItem } from '@/lib/data';
 import { useState, useEffect } from 'react';
@@ -9,12 +9,12 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge';
 import { Lightbulb, AlertTriangle, Check, X, Clock, Eye, ArrowRight } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
-import { useProgress } from '@/hooks/use-progress';
 
-export default function GuidePage({ params }: { params: { stepId: string } }) {
+export default function GuidePage() {
   const router = useRouter();
+  const params = useParams();
   
-  const stepId = params.stepId;
+  const stepId = Array.isArray(params.stepId) ? params.stepId[0] : params.stepId;
   const currentStepIndex = courseSteps.findIndex((s) => s.id === stepId);
   
   if (currentStepIndex === -1) {
