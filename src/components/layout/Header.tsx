@@ -16,7 +16,7 @@ export default function Header() {
           </Button>
           <Link href="/" className="flex items-center space-x-2">
             <PawPrint className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline text-lg hidden sm:inline-block">Bath Time Bliss</span>
+            <span className="font-bold font-headline text-lg hidden sm:inline-block">Método FICA-15</span>
           </Link>
         </div>
       </div>
