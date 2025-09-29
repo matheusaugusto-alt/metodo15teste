@@ -1,3 +1,4 @@
+
 import type { LucideIcon } from 'lucide-react';
 import { Home, Heart, ShowerHead, Award, Info, HelpCircle, ListChecks, CheckSquare, AlertTriangle } from 'lucide-react';
 import { PlaceHolderImages } from './placeholder-images';
@@ -80,7 +81,7 @@ export const courseSteps: Step[] = [
               '“Preciso gastar a energia do meu cão antes do banho?” Sim, mas não com brincadeiras de alta excitação (bola, pega-pega, cabo de guerra). Isso eleva adrenalina e dificulta a calma. Prefira gastar energia mental: farejar e mastigar/lamber.',
               '“E se eu der um passeio rápido?” Pode, se for passeio olfativo (curto, em ritmo lento, deixando cheirar). Evite corrida e puxões.',
               '“Meu cão não liga para petiscos quando está ansioso. E agora?” Afaste do box 1–2 m, comece com farejo mais longe e use um petisco mais saboroso. Se ainda recusar, pare hoje e tente outro horário.',
-              '“Quanto tempo dura?” 3–6 min (sensíveis: 6–8 min). Mais importante que o relógio é ver corpo solto e aceitando petisco.'
+              '“Quanto tempo dura?”: 3–6 min (sensíveis: 6–8 min). Mais importante que o relógio é ver corpo solto e aceitando petisco.'
             ],
           },
           {
@@ -88,11 +89,11 @@ export const courseSteps: Step[] = [
             title: 'Principais Erros',
             icon: 'AlertTriangle',
             content: [
-              'Brincadeira agitada antes do banho (bola, pega-pega, cabo de guerra): Atrapalha - deixa o cachorro “aceso”. Corrija - troque por farejar e lamber/roer devagar.',
-              'Não checar o estado emocional: Atrapalha - você começa com ele já tenso. Corrija - Analise o comportamento do cachorro conforme as orientações que serão passadas.',
-              'Água ligada durante a descompressão: Atrapalha - barulho e respingos aumentam alerta. Corrija - água sempre desligada até terminar esta fase.',
-              'Chão escorregadio: Atrapalha - medo de escorregar aumenta a tensão. Corrija - tapete antiderrapante já colocado dentro do box.',
-              'Deixar roer/lamber por tempo demais: Atrapalha - perde foco e valor do prêmio. Corrija - 60 a 90 segundos e interrompa ainda com vontade.'
+              'Brincadeira agitada antes do banho (bola, pega-pega, cabo de guerra): deixa o cachorro “aceso”; Corrija: troque por farejar e lamber/roer devagar.',
+              'Não checar o estado emocional: você começa com ele já tenso; Corrija: Analise o comportamento do cachorro conforme as orientações que serão passadas.',
+              'Água ligada durante a descompressão: barulho e respingos aumentam alerta; Corrija: água sempre desligada até terminar esta fase.',
+              'Chão escorregadio: medo de escorregar aumenta a tensão; Corrija: tapete antiderrapante já colocado dentro do box.',
+              'Deixar roer/lamber por tempo demais: perde foco e valor do prêmio; Corrija: 60 a 90 segundos e interrompa ainda com vontade.'
             ],
           },
           {

@@ -77,21 +77,16 @@ const ErrorsBlock = ({ content }: { content: string[] }) => {
     return (
       <div className="space-y-5">
         {content.map((item, index) => {
-          const [error, correction] = item.split(': Corrija - ');
+          const [error, ...rest] = item.split(':');
+          const [atrapalha, corrija] = rest.join(':').split('; Corrija: ');
+          
           return (
-            <div key={index} className="flex items-start gap-4">
-              <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-secondary text-lg font-bold text-secondary-foreground">
-                {index + 1}
-              </div>
-              <div>
-                <p className="font-medium text-foreground">{error}</p>
-                {correction && (
-                  <div className="mt-2 inline-flex items-center gap-2 rounded-lg bg-yellow-50 px-3 py-1 text-sm border border-yellow-200">
-                    <span className="font-semibold text-yellow-800">Correção:</span>
-                    <span className="text-yellow-900">{correction}</span>
-                  </div>
+            <div key={index} className="flex flex-col gap-2 p-4 rounded-lg bg-red-500/10 border border-red-500/20">
+                <h4 className="font-semibold text-red-700">{error}</h4>
+                <p className="text-sm text-red-900/80"><span className='font-medium'>Atrapalha:</span> {atrapalha}</p>
+                {corrija && (
+                  <p className="text-sm text-green-800/90"><span className='font-medium text-green-700'>Corrija:</span> {corrija}</p>
                 )}
-              </div>
             </div>
           );
         })}
