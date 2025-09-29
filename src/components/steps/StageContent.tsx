@@ -20,7 +20,7 @@ export default function StageContent({ stage }: StageContentProps) {
       {stage.blocks.map((block) => {
         const IconComponent = iconMap[block.icon];
         return (
-          <AccordionItem key={block.title} value={block.title} className="border-none bg-card rounded-2xl shadow-sm transition-shadow hover:shadow-md">
+          <AccordionItem key={block.title} value={block.title} className="border bg-card rounded-2xl shadow-[0_6px_20px_rgba(27,39,94,0.08)] dark:shadow-none transition-shadow hover:shadow-lg">
             <AccordionTrigger className="text-lg font-headline font-semibold hover:no-underline px-4 sm:px-6 py-4">
               <div className="flex items-center gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary flex-shrink-0">

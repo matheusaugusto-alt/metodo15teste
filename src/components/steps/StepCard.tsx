@@ -12,7 +12,7 @@ type StepCardProps = {
 export default function StepCard({ step, index }: StepCardProps) {
   return (
     <Link href={`/steps/${step.id}`} className="group block">
-      <Card className="h-full overflow-hidden transition-all duration-300 ease-in-out bg-card hover:shadow-2xl hover:-translate-y-2 hover:shadow-primary/20 border-border/50">
+      <Card className="h-full overflow-hidden transition-all duration-200 ease-in-out bg-card hover:shadow-xl hover:-translate-y-1">
         <div className="relative h-48 w-full">
             <Image
                 src={step.image.url}
@@ -25,7 +25,7 @@ export default function StepCard({ step, index }: StepCardProps) {
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
         </div>
         <CardHeader>
-          <Badge variant="secondary" className="w-fit mb-2 bg-primary/10 text-primary font-semibold border-primary/20">Passo {index + 1}</Badge>
+          <Badge variant="secondary" className="w-fit mb-2 font-semibold">Passo {index + 1}</Badge>
           <h3 className="font-headline text-xl font-bold text-foreground">{step.title}</h3>
         </CardHeader>
         <CardContent>

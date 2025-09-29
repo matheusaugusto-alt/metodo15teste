@@ -12,14 +12,15 @@ export default function Home() {
             <div className="inline-block bg-primary/10 p-3 rounded-2xl mb-4">
               <PawPrint className="h-8 w-8 text-primary" />
             </div>
-            <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground tracking-tighter">
+            <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground tracking-tight">
               Bath Time Bliss
             </h1>
             <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
               Um guia passo a passo para transformar a hora do banho do seu cão em um momento de calma e conexão.
             </p>
           </div>
-          <div className="relative h-80 lg:h-full min-h-[300px] rounded-3xl overflow-hidden shadow-2xl shadow-primary/20">
+          <div className="relative h-80 lg:h-full min-h-[300px] rounded-3xl overflow-hidden shadow-lg shadow-primary/10">
+             <div className="absolute inset-0 bg-gradient-to-t from-primary via-cyan-400 to-transparent opacity-20"></div>
             <Image
               src="https://images.unsplash.com/photo-1599422488313-25586b2648d4?q=80&w=2070&auto=format&fit=crop"
               alt="Happy dog getting a bath"
@@ -28,7 +29,6 @@ export default function Home() {
               className="object-cover"
               data-ai-hint="happy dog"
             />
-             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
           </div>
         </div>
 
