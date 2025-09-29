@@ -16,7 +16,7 @@ export default function Home() {
               Método FICA-15
             </h1>
             <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
-              Um guia passo a passo para transformar a hora do banho do seu cão em um momento de calma e conexão.
+              Seu passo a passo para um banho com cachorro tranquilo.
             </p>
           </div>
           <div className="relative h-80 lg:h-full min-h-[300px] rounded-3xl overflow-hidden shadow-lg shadow-primary/10">
