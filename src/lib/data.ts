@@ -13,7 +13,6 @@ export type GuideItem = {
   title: string;
   actions: string[];
   time?: string;
-  attention?: string;
   hint?: string;
   alert?: string;
 }
@@ -101,11 +100,11 @@ export const courseSteps: Step[] = [
             title: 'Passo a Passo (3 a 6 minutos)',
             icon: 'CheckSquare',
             items: [
-              { id: 's1-g1', title: 'Medidor de calma', time: '45s', attention: 'Alto', actions: ['Ofereça 1 micro-petisco e observe o corpo.', 'Se ele pegar o petisco, corpo solto → continue (nota 1 - ok).', 'Se ele lamber focinho, mais cauteloso → faça tudo mais devagar (nota 2 - atenção).', 'Se ele recusar petisco, tenta sair → não force. Afaste 2–3 m e tente farejo fácil. Persistindo, encerre e tente mais tarde (nota 3 - alto).']},
-              { id: 's1-g2', title: 'Farejo fácil', time: '2 min', attention: 'Médio', actions: ['Distância inicial: 1,5 a 2 m do chuveiro.', 'Espalhe 6 a 10 micro-petiscos (tamanho de uma ervilha) em cantinhos fáceis (chão, rodapé, atrás da toalha).', 'Se ele fareja e come com fluidez, aproxime aos poucos do chuveiro.'], alert: 'Se travar ou ignorar, volte 1 passo (afaste e facilite).'},
-              { id: 's1-g3', title: 'Lamber/Roer devagar', time: '1 min', attention: 'Baixo', actions: ['Ofereça brinquedo de lamber ou mordedor macio (sem disputar com ele, apenas ofereça).', 'Interrompa antes de ele enjoar e dê 1 micro-petisco.']},
-              { id: 's1-g4', title: 'Sinal de começar', time: '20s (x3)', attention: 'Médio', actions: ['Coloque um tapetinho a 1 metro do chuveiro.', 'Quando ele subir sozinho, marque (elogie) e dê 1 micro-petisco.', 'Repita 3 vezes. Na última, leve o tapete dentro do box do chuveiro.'], hint: 'Sinal válido: na 3ª, ele sobe sem convite.'},
-              { id: 's1-g5', title: 'Entrar no box', time: '30s', attention: 'Alto', actions: ['Água ainda desligada. Convide com calma.', 'Assim que entrar, dê 2–3 micro-petiscos no tapete antiderrapante e faça pausa de 2 segundos.'], alert: 'Se ficar muito tenso, saia, faça 30–45 segundos de farejo fácil e tente novamente.'},
+              { id: 's1-g1', title: 'Medidor de calma', time: '45s', actions: ['Ofereça 1 micro-petisco e observe o corpo.', 'Se ele pegar o petisco, corpo solto → continue (nota 1 - ok).', 'Se ele lamber focinho, mais cauteloso → faça tudo mais devagar (nota 2 - atenção).', 'Se ele recusar petisco, tenta sair → não force. Afaste 2–3 m e tente farejo fácil. Persistindo, encerre e tente mais tarde (nota 3 - alto).']},
+              { id: 's1-g2', title: 'Farejo fácil', time: '2 min', actions: ['Distância inicial: 1,5 a 2 m do chuveiro.', 'Espalhe 6 a 10 micro-petiscos (tamanho de uma ervilha) em cantinhos fáceis (chão, rodapé, atrás da toalha).', 'Se ele fareja e come com fluidez, aproxime aos poucos do chuveiro.'], alert: 'Se travar ou ignorar, volte 1 passo (afaste e facilite).'},
+              { id: 's1-g3', title: 'Lamber/Roer devagar', time: '1 min', actions: ['Ofereça brinquedo de lamber ou mordedor macio (sem disputar com ele, apenas ofereça).', 'Interrompa antes de ele enjoar e dê 1 micro-petisco.']},
+              { id: 's1-g4', title: 'Sinal de começar', time: '20s (x3)', actions: ['Coloque um tapetinho a 1 metro do chuveiro.', 'Quando ele subir sozinho, marque (elogie) e dê 1 micro-petisco.', 'Repita 3 vezes. Na última, leve o tapete dentro do box do chuveiro.'], hint: 'Sinal válido: na 3ª, ele sobe sem convite.'},
+              { id: 's1-g5', title: 'Entrar no box', time: '30s', actions: ['Água ainda desligada. Convide com calma.', 'Assim que entrar, dê 2–3 micro-petiscos no tapete antiderrapante e faça pausa de 2 segundos.'], alert: 'Se ficar muito tenso, saia, faça 30–45 segundos de farejo fácil e tente novamente.'},
             ]
           },
           {
@@ -169,13 +168,13 @@ export const courseSteps: Step[] = [
             title: 'Passo a Passo (1 a 3 minutos)',
             icon: 'CheckSquare',
             items: [
-              { id: 's2-g1', title: 'Preparar o espaço', time: '30-60s', attention: 'Baixo', actions: ['Coloque o tapete antiderrapante dentro do box.', 'Tenha a toalha à mão.', 'Verifique se a água está desligada.', 'Evite ruídos altos como portas batendo.'], hint: 'Um ambiente calmo começa antes do cão entrar.' },
-              { id: 's2-g2', title: 'Teste de piso', time: '10-20s', attention: 'Médio', actions: ['Deixe o cão entrar e parar no tapete.', 'Se hesitar, use o tapetinho de sinal na entrada, pague 1 micro-petisco e convide novamente.'], alert: 'A segurança no piso é fundamental para a confiança.' },
-              { id: 's2-g3', title: 'Apresentação da duchinha (DESLIGADA)', time: '10-20s', attention: 'Médio', actions: ['Mostre a duchinha perto do corpo, sem tocar.', 'Toque rapidamente no ombro ou costela.', 'Observe o corpo: se estiver solto e aceitando petisco, siga. Senão, repita mais devagar.'], hint: 'Familiaridade com o objeto diminui o medo.' },
-              { id: 's2-g4', title: 'Pingos no TAPETE', time: '10-20s', attention: 'Alto', actions: ['Ligue a água bem fraca e deixe pingar no tapete, longe do cão.', 'Fale com calma e ofereça 1 micro-petisco.'], alert: 'Se tensionar: desligue, faça uma pausa de 5s, e volte ao passo anterior.' },
-              { id: 's2-g5', title: 'Ajuste de temperatura', time: '10-20s', attention: 'Baixo', actions: ['Com a água pingando fraca, ajuste até ficar morna e confortável.', 'Teste no seu pulso: não deve queimar nem gelar.', 'Mantenha um filete fraco.'], hint: 'A temperatura certa evita choques térmicos.' },
-              { id: 's2-g6', title: 'Filete fino nas PATAS', time: '10-30s', attention: 'Alto', actions: ['Leve o filete fraco até as patas dianteiras por alguns segundos.', 'Pare por 2s e pague 1 micro-petisco.', 'Repita nas patas traseiras.'], alert: 'Sinais para avançar: corpo solto, sem recuar, aceitando petisco.' },
-              { id: 's2-g7', title: 'Pausa e Decisão', time: '5-10s', attention: 'Médio', actions: ['Está tranquilo? Prossiga para a próxima etapa (Condução do Banho).', 'Ficou tenso? Desligue a água, faça 20-30s de farejo fácil fora do jato e repita o passo 5 (Ajuste de temperatura).'], hint: 'Sempre termine em uma nota positiva.' }
+              { id: 's2-g1', title: 'Preparar o espaço', time: '30-60s', actions: ['Coloque o tapete antiderrapante dentro do box.', 'Tenha a toalha à mão.', 'Verifique se a água está desligada.', 'Evite ruídos altos como portas batendo.'], hint: 'Um ambiente calmo começa antes do cão entrar.' },
+              { id: 's2-g2', title: 'Teste de piso', time: '10-20s', actions: ['Deixe o cão entrar e parar no tapete.', 'Se hesitar, use o tapetinho de sinal na entrada, pague 1 micro-petisco e convide novamente.'], alert: 'A segurança no piso é fundamental para a confiança.' },
+              { id: 's2-g3', title: 'Apresentação da duchinha (DESLIGADA)', time: '10-20s', actions: ['Mostre a duchinha perto do corpo, sem tocar.', 'Toque rapidamente no ombro ou costela.', 'Observe o corpo: se estiver solto e aceitando petisco, siga. Senão, repita mais devagar.'], hint: 'Familiaridade com o objeto diminui o medo.' },
+              { id: 's2-g4', title: 'Pingos no TAPETE', time: '10-20s', actions: ['Ligue a água bem fraca e deixe pingar no tapete, longe do cão.', 'Fale com calma e ofereça 1 micro-petisco.'], alert: 'Se tensionar: desligue, faça uma pausa de 5s, e volte ao passo anterior.' },
+              { id: 's2-g5', title: 'Ajuste de temperatura', time: '10-20s', actions: ['Com a água pingando fraca, ajuste até ficar morna e confortável.', 'Teste no seu pulso: não deve queimar nem gelar.', 'Mantenha um filete fraco.'], hint: 'A temperatura certa evita choques térmicos.' },
+              { id: 's2-g6', title: 'Filete fino nas PATAS', time: '10-30s', actions: ['Leve o filete fraco até as patas dianteiras por alguns segundos.', 'Pare por 2s e pague 1 micro-petisco.', 'Repita nas patas traseiras.'], alert: 'Sinais para avançar: corpo solto, sem recuar, aceitando petisco.' },
+              { id: 's2-g7', title: 'Pausa e Decisão', time: '5-10s', actions: ['Está tranquilo? Prossiga para a próxima etapa (Condução do Banho).', 'Ficou tenso? Desligue a água, faça 20-30s de farejo fácil fora do jato e repita o passo 5 (Ajuste de temperatura).'], hint: 'Sempre termine em uma nota positiva.' }
             ]
           },
           {
@@ -246,11 +245,11 @@ export const courseSteps: Step[] = [
             title: 'Passo a Passo (6-12 minutos)',
             icon: 'CheckSquare',
             items: [
-              { id: 's3-g1', title: 'Bloco 1: Traseiro/cauda', time: '40-60s', attention: 'Médio', actions: ['Molhar, ensaboar e enxaguar a região.', 'Use a "mão parede" como apoio no quadril.'], hint: 'Após a ação, faça uma pausa de 30-45s com 1-2 micro-petiscos ou 20-30s de atividade de lamber.'},
-              { id: 's3-g2', title: 'Bloco 2: Dorso e laterais', time: '40-60s', attention: 'Médio', actions: ['Molhar, ensaboar e enxaguar, sempre de cima para baixo.', 'Use a "mão parede" como apoio no ombro.'], hint: 'Faça a mesma pausa de 30-45s do bloco anterior.'},
-              { id: 's3-g3', title: 'Bloco 3: Peito e pescoço', time: '40-60s', attention: 'Alto', actions: ['Molhar, ensaboar e enxaguar com cuidado.'], alert: 'Atenção para não direcionar o jato de água para o rosto. Faça uma pausa de 30-45s.'},
-              { id: 's3-g4', title: 'Bloco 4: Patas', time: '40-60s', attention: 'Alto', actions: ['Use um filete fraco e por pouco tempo.', 'Se necessário, lave uma pata de cada vez.'], hint: 'Termine com a pausa de 30-45s.'},
-              { id: 's3-g5', title: 'Final: Rosto', time: '30-60s', attention: 'Alto', actions: ['Use um pano úmido com água morna.', 'Se usar shampoo, que seja bem diluído e evite olhos/narinas.'], alert: 'NUNCA use o jato de água diretamente no rosto.'},
+              { id: 's3-g1', title: 'Bloco 1: Traseiro/cauda', time: '40-60s', actions: ['Molhar, ensaboar e enxaguar a região.', 'Use a "mão parede" como apoio no quadril.'], hint: 'Após a ação, faça uma pausa de 30-45s com 1-2 micro-petiscos ou 20-30s de atividade de lamber.'},
+              { id: 's3-g2', title: 'Bloco 2: Dorso e laterais', time: '40-60s', actions: ['Molhar, ensaboar e enxaguar, sempre de cima para baixo.', 'Use a "mão parede" como apoio no ombro.'], hint: 'Faça a mesma pausa de 30-45s do bloco anterior.'},
+              { id: 's3-g3', title: 'Bloco 3: Peito e pescoço', time: '40-60s', actions: ['Molhar, ensaboar e enxaguar com cuidado.'], alert: 'Atenção para não direcionar o jato de água para o rosto. Faça uma pausa de 30-45s.'},
+              { id: 's3-g4', title: 'Bloco 4: Patas', time: '40-60s', actions: ['Use um filete fraco e por pouco tempo.', 'Se necessário, lave uma pata de cada vez.'], hint: 'Termine com a pausa de 30-45s.'},
+              { id: 's3-g5', title: 'Final: Rosto', time: '30-60s', actions: ['Use um pano úmido com água morna.', 'Se usar shampoo, que seja bem diluído e evite olhos/narinas.'], alert: 'NUNCA use o jato de água diretamente no rosto.'},
             ]
           },
           {
@@ -318,8 +317,8 @@ export const courseSteps: Step[] = [
             title: 'Como Aplicar a Tolerância',
             icon: 'CheckSquare',
             items: [
-              { id: 's4-g1', title: 'Use uma "âncora de calma"', time: '40-60s', attention: 'Baixo', actions: ['Passe uma camada fina de um alimento pastoso em um brinquedo de lamber.', 'Opções seguras: iogurte sem açúcar, abóbora cozida, patê canino, ração umedecida.'], hint: 'Deixe o cão lamber por 40-60s e recolha o brinquedo antes que ele perca o interesse.' },
-              { id: 's4-g2', title: 'Momentos recomendados', time: 'Variável', attention: 'Médio', actions: ['Entrada da secagem: 40–60 s.', 'No meio do processo (se precisar): 20–30 s.', 'Finalização (enquanto troca para toalha): 20–30 s.'], alert: 'A quantidade de comida deve ser pequena. Para cães de porte pequeno (≤10 kg), use 1–2 colheres de chá.' },
+              { id: 's4-g1', title: 'Use uma "âncora de calma"', time: '40-60s', actions: ['Passe uma camada fina de um alimento pastoso em um brinquedo de lamber.', 'Opções seguras: iogurte sem açúcar, abóbora cozida, patê canino, ração umedecida.'], hint: 'Deixe o cão lamber por 40-60s e recolha o brinquedo antes que ele perca o interesse.' },
+              { id: 's4-g2', title: 'Momentos recomendados', time: 'Variável', actions: ['Entrada da secagem: 40–60 s.', 'No meio do processo (se precisar): 20–30 s.', 'Finalização (enquanto troca para toalha): 20–30 s.'], alert: 'A quantidade de comida deve ser pequena. Para cães de porte pequeno (≤10 kg), use 1–2 colheres de chá.' },
             ],
           },
           {
@@ -327,11 +326,11 @@ export const courseSteps: Step[] = [
             title: 'Como Fazer a Secagem',
             icon: 'CheckSquare',
             items: [
-                { id: 's4-g3', title: 'Nível 0: Aparelho desligado', time: '20-30s', attention: 'Baixo', actions: ['Deixe o secador visível na sua mão enquanto o cão se ocupa com o brinquedo de lamber.'], hint: 'O cão precisa estar calmo para avançar.' },
-                { id: 's4-g4', title: 'Nível 1: Ligado longe, ar para longe', time: '30-60s', attention: 'Médio', actions: ['Ligue o secador no modo mais fraco, com o barulho ao fundo e sem vento direcionado ao cão.'], alert: 'Se houver tensão, faça uma pausa e volte ao nível 0.' },
-                { id: 's4-g5', title: 'Nível 2: Ar na mão do tutor', time: '30-60s', attention: 'Médio', actions: ['Use sua mão como um "escudo". O vento bate na sua mão a 30-50 cm do cão.'], hint: 'Avance se o cão permanecer calmo.' },
-                { id: 's4-g6', title: 'Nível 3: Dorso/laterais, longe', time: '10-20s', attention: 'Alto', actions: ['Mantenha o ar em movimento, a mais de 30 cm de distância, com passadas curtas.'], alert: 'Nunca pare o ar quente em um mesmo ponto.' },
-                { id: 's4-g7', title: 'Nível 4: Mais perto, áreas menos sensíveis', time: '20-30s', attention: 'Alto', actions: ['Aproxime o secador para 20-30 cm, fazendo uma varredura rápida no dorso e laterais.'], hint: 'Patas e cabeça devem ser secas por último, ou apenas com a toalha.' },
+                { id: 's4-g3', title: 'Nível 0: Aparelho desligado', time: '20-30s', actions: ['Deixe o secador visível na sua mão enquanto o cão se ocupa com o brinquedo de lamber.'], hint: 'O cão precisa estar calmo para avançar.' },
+                { id: 's4-g4', title: 'Nível 1: Ligado longe, ar para longe', time: '30-60s', actions: ['Ligue o secador no modo mais fraco, com o barulho ao fundo e sem vento direcionado ao cão.'], alert: 'Se houver tensão, faça uma pausa e volte ao nível 0.' },
+                { id: 's4-g5', title: 'Nível 2: Ar na mão do tutor', time: '30-60s', actions: ['Use sua mão como um "escudo". O vento bate na sua mão a 30-50 cm do cão.'], hint: 'Avance se o cão permanecer calmo.' },
+                { id: 's4-g6', title: 'Nível 3: Dorso/laterais, longe', time: '10-20s', actions: ['Mantenha o ar em movimento, a mais de 30 cm de distância, com passadas curtas.'], alert: 'Nunca pare o ar quente em um mesmo ponto.' },
+                { id: 's4-g7', title: 'Nível 4: Mais perto, áreas menos sensíveis', time: '20-30s', actions: ['Aproxime o secador para 20-30 cm, fazendo uma varredura rápida no dorso e laterais.'], hint: 'Patas e cabeça devem ser secas por último, ou apenas com a toalha.' },
             ]
           },
           {

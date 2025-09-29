@@ -56,7 +56,6 @@ export default function GuidePage() {
             </div>
             <div className="flex items-center gap-2 flex-shrink-0">
               {item.time && <Badge variant="secondary"><Clock className="h-3 w-3 mr-1" />{item.time}</Badge>}
-              {item.attention && <Badge variant="outline" className="border-amber-500/50 text-amber-600"><Eye className="h-3 w-3 mr-1" />{item.attention}</Badge>}
             </div>
           </div>
         </CardHeader>
