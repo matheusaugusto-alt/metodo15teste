@@ -15,7 +15,8 @@ export default function GuidePage({ params }: { params: { stepId: string } }) {
   const router = useRouter();
   const { toggleItemCompletion, isItemCompleted } = useProgress();
 
-  const currentStepIndex = courseSteps.findIndex((s) => s.id === params.stepId);
+  const stepId = params.stepId;
+  const currentStepIndex = courseSteps.findIndex((s) => s.id === stepId);
   const step = courseSteps[currentStepIndex];
 
   const guideItems: GuideItem[] = step?.stages.flatMap(stage =>
@@ -118,7 +119,7 @@ export default function GuidePage({ params }: { params: { stepId: string } }) {
               <step.icon className="h-6 w-6 text-primary" />
               <h1 className="font-headline text-lg font-bold">{step.title}</h1>
             </div>
-            <Button variant="ghost" size="icon" onClick={() => router.push(`/steps/${params.stepId}`)}>
+            <Button variant="ghost" size="icon" onClick={() => router.push(`/steps/${stepId}`)}>
               <X className="h-5 w-5" />
             </Button>
           </div>
