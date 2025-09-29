@@ -86,7 +86,7 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
                 <p className='text-muted-foreground mt-1'>Siga as ações em cartões interativos para uma experiência guiada.</p>
               </div>
               <Button asChild size="lg">
-                <Link href={`/steps/${step.id}/guide`}>Iniciar Passo a Passo</Link>
+                <Link href={`/steps/${step.id}/guide`}>Ver o Passo a Passo</Link>
               </Button>
             </div>
           </div>
