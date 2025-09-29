@@ -229,15 +229,32 @@ export const courseSteps: Step[] = [
             ]
           },
           {
-            type: 'errors',
+            type: 'info',
             title: 'Aviso: Molhar por partes?',
             icon: 'AlertTriangle',
             content: [
-                'Em cães ansiosos (banho comum): Melhor fazer por partes (ciclos curtos): molhar → ensaboar → enxaguar uma região de cada vez (traseiro/cauda → dorso/laterais → peito/pescoço → patas; rosto no pano úmido no final).',
-                'Por quê? Reduz o tempo contínuo de água em cima do cão (menos estresse). Dá pausas programadas entre regiões (respira, lambe/ganha micro-petisco). Mantém previsibilidade: “termino aqui, pauso, depois a próxima parte”.',
-                'Dica prática (fluxo híbrido): antes de começar os ciclos, faça um pré-molhado leve e rápido no corpo (exceto cabeça) por 10–20 s, só para tirar o “choque” do primeiro jato. Depois siga nos ciclos por região.',
-                'Em cães tranquilos/experientes (banho comum): Pode molhar o corpo todo, ensaboar todo, e depois enxaguar todo — desde que: Você mantenha o ritmo (sem demorar com o shampoo parado na pele), a água esteja morna e com pressão baixa/média, e haja poucas pausas e o cão não mostre sinais de incômodo.',
-                'Quando não fazer “por partes”: Shampoo terapêutico/medicado (dermatite, antipruriginoso etc.): quase sempre precisa de contato no corpo todo por X minutos (rótulo). O fluxo indicado é: Pré-molhar rápido o corpo (sem rosto). Aplicar shampoo diluído em todo o corpo (evitar olhos/narinas). Aguardar o tempo de contato (ex.: 5–10 min), água desligada, usando pausas curtas com lambe-lambe para manter o cão calmo. Enxaguar muito bem, de preferência por zonas (para garantir remoção total). Pelagem muito densa/longa com muita sujeira: espalhar o shampoo no corpo todo ajuda a penetrar melhor; depois enxágue caprichado por zonas.'
+                'O banho precisa ser sempre molhar, ensaboar e enxaguar por partes?',
+                '',
+                'Em cães ansiosos é melhor fazer por partes (ciclos curtos); molhar → ensaboar → enxaguar uma região de cada vez (traseiro/cauda → dorso/laterais → peito/pescoço → patas; rosto no pano úmido no final).',
+                'Por quê?',
+                'Reduz o tempo contínuo de água em cima do cão (menos estresse).',
+                'Dá pausas programadas entre regiões (respira, lambe/ganha micro-petisco).',
+                'Mantém previsibilidade: “termino aqui, pauso, depois a próxima parte”.',
+                'Dica prática: Antes de começar os ciclos, faça um pré-molhado leve e rápido no corpo (exceto cabeça) por 10–20 s, só para tirar o “choque” do primeiro jato. Depois siga nos ciclos por região.',
+                '',
+                'Em cães tranquilos/experientes (banho comum); Pode molhar o corpo todo, ensaboar todo, e depois enxaguar todo — desde que:',
+                '- Você mantenha o ritmo (sem demorar com o shampoo parado na pele).',
+                '- A água esteja morna e com pressão baixa/média.',
+                '- Haja poucas pausas e o cão não mostre sinais de incômodo.',
+                '',
+                'Quando não fazer “por partes”?:',
+                'Shampoo terapêutico/medicado (dermatite, antipruriginoso etc.): quase sempre precisa de contato no corpo todo por X minutos (rótulo).',
+                'Fluxo indicado:',
+                '- Pré-molhar rápido o corpo (sem rosto).',
+                '- Aplicar shampoo diluído em todo o corpo (evitar olhos/narinas).',
+                '- Aguardar o tempo de contato (ex.: 5–10 min), água desligada, usando pausas curtas com lambe-lambe para manter o cão calmo.',
+                '- Enxaguar muito bem, de preferência por zonas (para garantir remoção total).',
+                '- Pelagem muito densa/longa com muita sujeira: espalhar o shampoo no corpo todo ajuda a penetrar melhor; depois enxágue caprichado por zonas.'
             ]
           },
           {

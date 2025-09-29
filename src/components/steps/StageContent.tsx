@@ -80,29 +80,22 @@ const ErrorsBlock = ({ content }: { content:string[] }) => {
     );
 };
   
-
 const InfoBlock = ({ content }: { content: string[] }) => {
-    const tldr = content.slice(0, 1);
-    const details = content.slice(1);
-
     return (
-        <div className="space-y-4">
-            {tldr.length > 0 && (
-                 <div className="rounded-lg bg-muted p-3 border">
-                    <div className="flex items-center gap-3">
-                        <Info className="h-5 w-5 flex-shrink-0 text-primary" />
-                        <p className="text-sm font-medium text-primary">{tldr[0]}</p>
-                    </div>
-                </div>
-            )}
-            {details.length > 0 && (
-                <ul className="space-y-2 pl-5 list-disc text-foreground/80">
-                    {details.map((line, index) => (
-                      <li key={index}>{line}</li>
-                    ))}
-                </ul>
-            )}
-        </div>
+      <div className="space-y-2 text-foreground/80 prose prose-sm max-w-none">
+        {content.map((line, index) => {
+            if (line.trim() === '') {
+                return <div key={index} className="h-4"></div>; // Spacer for empty lines
+            }
+            if (line.startsWith('- ')) {
+                 return <p key={index} className="pl-4">{line}</p>;
+            }
+            if (line.endsWith('?') || line.endsWith(':')) {
+                return <h5 key={index} className="font-semibold text-foreground/90 mt-4">{line}</h5>;
+            }
+            return <p key={index}>{line}</p>;
+        })}
+      </div>
     );
 };
 
