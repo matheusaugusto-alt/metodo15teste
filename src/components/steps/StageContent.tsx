@@ -15,12 +15,14 @@ interface StageContentProps {
 }
 
 export default function StageContent({ stage }: StageContentProps) {
-  // Filter out 'guide' blocks, and separate 'checklist' blocks from others
-  const guideBlocks = stage.blocks.filter(block => block.type === 'guide');
-  const checklistBlocks = stage.blocks.filter(block => block.type === 'checklist');
-  const otherBlocks = stage.blocks.filter(block => block.type !== 'guide' && block.type !== 'checklist');
+  // Filter out 'guide' blocks, as they are handled separately.
+  const allBlocks = stage.blocks.filter(block => block.type !== 'guide');
+  
+  // Separate 'checklist' blocks from the others.
+  const checklistBlocks = allBlocks.filter(block => block.type === 'checklist');
+  const otherBlocks = allBlocks.filter(block => block.type !== 'checklist');
 
-  // Recombine, putting checklists at the end
+  // Recombine, ensuring checklists are always at the end.
   const blocksToRender = [...otherBlocks, ...checklistBlocks];
 
   if (blocksToRender.length === 0) return null;
@@ -30,11 +32,11 @@ export default function StageContent({ stage }: StageContentProps) {
       {blocksToRender.map((block) => {
         const IconComponent = iconMap[block.icon];
         return (
-          <AccordionItem key={block.title} value={block.title} className="border bg-card rounded-2xl shadow-[0_6px_20px_rgba(27,39,94,0.08)] dark:shadow-none transition-shadow hover:shadow-lg">
+          <AccordionItem key={block.title} value={block.title} className="border bg-card rounded-2xl shadow-sm transition-shadow hover:shadow-md">
             <AccordionTrigger className="text-lg font-headline font-semibold hover:no-underline px-4 sm:px-6 py-4">
               <div className="flex items-center gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary flex-shrink-0">
-                  <IconComponent className="h-6 w-6" />
+                  {IconComponent && <IconComponent className="h-6 w-6" />}
                 </div>
                 <span className="text-left">{block.title}</span>
               </div>
