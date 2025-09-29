@@ -50,7 +50,7 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
         )}
       </div>
 
-      <div className="w-full space-y-4">
+      <div className="w-full space-y-4 mb-8">
         {step.stages.map((stage) => (
           <StageContent key={stage.id} stage={stage} />
         ))}
