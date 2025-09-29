@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useProgress } from '@/hooks/use-progress';
@@ -14,8 +15,8 @@ export default function ChecklistItemComponent({ item }: ChecklistItemProps) {
 
   if (!isLoaded) {
     return (
-      <div className="flex items-center space-x-3 animate-pulse">
-        <div className="h-4 w-4 rounded-sm bg-muted"></div>
+      <div className="flex items-center space-x-4 animate-pulse h-11">
+        <div className="h-6 w-6 rounded-md bg-muted"></div>
         <div className="h-4 w-3/4 rounded bg-muted"></div>
       </div>
     );
@@ -24,7 +25,7 @@ export default function ChecklistItemComponent({ item }: ChecklistItemProps) {
   const completed = isItemCompleted(item.id);
 
   return (
-    <div className="flex items-center space-x-3 p-2 rounded-md transition-colors hover:bg-accent/50">
+    <div className="flex items-center space-x-4 p-2 rounded-lg transition-colors hover:bg-accent/50 h-11">
       <Checkbox
         id={item.id}
         checked={completed}
@@ -34,7 +35,7 @@ export default function ChecklistItemComponent({ item }: ChecklistItemProps) {
       <Label
         htmlFor={item.id}
         id={`label-${item.id}`}
-        className={`flex-1 text-base cursor-pointer ${completed ? 'text-muted-foreground line-through' : 'text-foreground'}`}
+        className={`flex-1 text-base cursor-pointer transition-colors ${completed ? 'text-muted-foreground line-through decoration-muted-foreground/50' : 'text-foreground'}`}
       >
         {item.text}
       </Label>

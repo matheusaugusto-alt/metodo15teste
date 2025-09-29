@@ -1,6 +1,7 @@
+
 "use client";
 
-import type { Stage } from '@/lib/data';
+import type { Stage, ContentBlock } from '@/lib/data';
 import { iconMap } from '@/lib/data';
 import {
   Accordion,
@@ -9,17 +10,106 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import ChecklistItemComponent from './ChecklistItem';
+import { Check, HelpCircle, Info, AlertTriangle } from 'lucide-react';
 
 interface StageContentProps {
   stage: Stage;
 }
 
+const getIconForType = (type: ContentBlock['type']) => {
+  switch (type) {
+    case 'info':
+      return <Info className="h-5 w-5" />;
+    case 'faq':
+      return <HelpCircle className="h-5 w-5" />;
+    case 'errors':
+        return <AlertTriangle className="h-5 w-5" />;
+    case 'checklist':
+        return <Check className="h-5 w-5" />;
+    default:
+      return <Info className="h-5 w-5" />;
+  }
+}
+
+const QABlock = ({ content }: { content: string[] }) => {
+    return (
+      <div className="space-y-4">
+        {content.map((item, index) => {
+          const match = item.match(/“([^”]+)”(.*)/);
+          if (!match) return null;
+  
+          const [, question, answer] = match;
+          return (
+            <div key={index}>
+              <div className="group/q flex items-center gap-3 rounded-xl bg-blue-50 p-3 transition-transform duration-200 hover:-translate-y-0.5">
+                <HelpCircle className="h-6 w-6 flex-shrink-0 text-blue-800" />
+                <h4 className="font-headline text-base font-semibold text-blue-900">{question}</h4>
+              </div>
+              <div className="mt-2 pl-4 border-l-4 border-primary/50 ml-4">
+                <p className="py-2 text-foreground/80">{answer.trim()}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+};
+
+const ErrorsBlock = ({ content }: { content: string[] }) => {
+    return (
+      <div className="space-y-5">
+        {content.map((item, index) => {
+          const [error, correction] = item.split(': Corrija - ');
+          return (
+            <div key={index} className="flex items-start gap-4">
+              <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-secondary text-lg font-bold text-secondary-foreground">
+                {index + 1}
+              </div>
+              <div>
+                <p className="font-medium text-foreground">{error}</p>
+                {correction && (
+                  <div className="mt-2 inline-flex items-center gap-2 rounded-lg bg-yellow-50 px-3 py-1 text-sm">
+                    <span className="font-semibold text-yellow-700">Correção:</span>
+                    <span className="text-yellow-800">{correction}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+};
+  
+
+const InfoBlock = ({ content }: { content: string[] }) => {
+    const tldr = content.slice(0, 1);
+    const details = content.slice(1);
+
+    return (
+        <div className="space-y-4">
+            {tldr.length > 0 && (
+                 <div className="rounded-lg bg-blue-50 p-3">
+                    <div className="flex items-center gap-3">
+                        <Info className="h-5 w-5 flex-shrink-0 text-blue-800" />
+                        <p className="text-sm text-blue-900">{tldr[0]}</p>
+                    </div>
+                </div>
+            )}
+            {details.length > 0 && (
+                <ul className="space-y-2 pl-5 list-disc text-foreground/80">
+                    {details.map((line, index) => (
+                      <li key={index}>{line}</li>
+                    ))}
+                </ul>
+            )}
+        </div>
+    );
+};
+
 export default function StageContent({ stage }: StageContentProps) {
-  // Separate 'checklist' blocks from the others to render them last.
   const checklistBlocks = stage.blocks.filter(block => block.type === 'checklist');
   const otherBlocks = stage.blocks.filter(block => block.type !== 'checklist');
-
-  // Recombine, ensuring checklists are always at the end.
   const blocksToRender = [...otherBlocks, ...checklistBlocks];
 
   if (blocksToRender.length === 0) return null;
@@ -31,30 +121,37 @@ export default function StageContent({ stage }: StageContentProps) {
         return (
           <AccordionItem key={block.title} value={block.title} className="border bg-card rounded-2xl shadow-sm transition-shadow hover:shadow-md">
             <AccordionTrigger className="text-lg font-headline font-semibold hover:no-underline px-4 sm:px-6 py-4">
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 w-full">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary flex-shrink-0">
                   {IconComponent && <IconComponent className="h-6 w-6" />}
                 </div>
-                <span className="text-left">{block.title}</span>
+                <div className='flex flex-col items-start text-left flex-grow'>
+                    <span className="text-left">{block.title}</span>
+                </div>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pt-0 pb-6 px-4 sm:px-6">
-              {block.type === 'checklist' && block.items && (
-                <div className="space-y-3 pl-0 sm:pl-16">
-                  {block.items.map((item) => (
-                    <ChecklistItemComponent key={item.id} item={item} />
-                  ))}
+                <div className="pl-0 sm:pl-16 max-w-3xl">
+                  {block.type === 'checklist' && block.items && (
+                    <div className="space-y-2">
+                      {block.items.map((item) => (
+                        <ChecklistItemComponent key={item.id} item={item} />
+                      ))}
+                    </div>
+                  )}
+                   {block.type === 'faq' && block.content && <QABlock content={block.content} />}
+                   {block.type === 'errors' && block.content && <ErrorsBlock content={block.content} />}
+                   {block.type === 'info' && block.content && <InfoBlock content={block.content} />}
+                   {block.type !== 'faq' && block.type !== 'errors' && block.type !== 'info' && block.type !== 'checklist' && block.content && (
+                     <div className="prose prose-sm max-w-none text-foreground/80">
+                       <ul className="space-y-2">
+                         {block.content.map((line, index) => (
+                           <li key={index} className="pl-2">{line}</li>
+                         ))}
+                       </ul>
+                     </div>
+                   )}
                 </div>
-              )}
-              {block.content && (
-                <div className="prose prose-sm max-w-none text-foreground/80 pl-0 sm:pl-16">
-                  <ul className="space-y-2">
-                    {block.content.map((line, index) => (
-                      <li key={index} className="pl-2">{line}</li>
-                    ))}
-                  </ul>
-                </div>
-              )}
             </AccordionContent>
           </AccordionItem>
         );
