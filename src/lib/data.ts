@@ -328,7 +328,7 @@ export const courseSteps: Step[] = [
             icon: 'CheckSquare',
             items: [
               { id: 's4-g1', title: 'Use uma "âncora de calma"', time: '40-60s', actions: ['Passe uma camada fina de um alimento pastoso em um brinquedo de lamber.', 'Opções seguras: iogurte sem açúcar, abóbora cozida, patê canino, ração umedecida.'], hint: 'Deixe o cão lamber por 40-60s e recolha o brinquedo antes que ele perca o interesse.' },
-              { id: 's4-g2', title: 'Momentos recomendados', time: 'Variável', actions: ['Entrada da secagem: 40–60 s.', 'No meio do processo (se precisar): 20–30 s.', 'Finalização (enquanto troca para toalha): 20–30 s.'], alert: 'A quantidade de comida deve ser pequena. Para cães de porte pequeno (≤10 kg), use 1–2 colheres de chá.' },
+              { id: 's4-g2', title: 'Momentos recomendados para usar o brinquedo de lamber( LickiMat)', time: 'Variável', actions: ['Entrada da secagem: 40–60 s.', 'No meio do processo (se precisar): 20–30 s.', 'Finalização (enquanto troca para toalha): 20–30 s.'], alert: 'A quantidade de comida deve ser pequena. Para cães de porte pequeno (≤10 kg), use 1–2 colheres de chá.' },
             ],
           },
           {
@@ -371,4 +371,5 @@ export const iconMap = {
     
 
     
+
 
