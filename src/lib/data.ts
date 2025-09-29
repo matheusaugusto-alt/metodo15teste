@@ -221,11 +221,11 @@ export const courseSteps: Step[] = [
             title: 'Dúvidas Comuns',
             icon: 'HelpCircle',
             content: [
-              'Qual comando usar?: Use uma palavra só (exemplo “Fica”), sempre igual, em tom curto e neutro.',
-              'Por que pausar? Não atrasa?: Pausa evita sobrecarga. Com pausas, o banho costuma terminar mais rápido e com menos luta.',
-              'Posso mudar a ordem das regiões?: Evite. Mesma ordem sempre = previsibilidade e menos sustos.',
-              'Como segurar o cão?: Não segure no pescoço. Use a mão aberta apoiada no quadril ou ombro, firme e suave, só como “apoio”, nunca forçando.',
-              'E o rosto?: Sem jato. Limpe no final com pano úmido.'
+              '“Qual comando usar?”: Use uma palavra só (exemplo “Fica”), sempre igual, em tom curto e neutro.',
+              '“Por que pausar? Não atrasa?”: Pausa evita sobrecarga. Com pausas, o banho costuma terminar mais rápido e com menos luta.',
+              '“Posso mudar a ordem das regiões?”: Evite. Mesma ordem sempre = previsibilidade e menos sustos.',
+              '“Como segurar o cão?”: Não segure no pescoço. Use a mão aberta apoiada no quadril ou ombro, firme e suave, só como “apoio”, nunca forçando.',
+              '“E o rosto?”: Sem jato. Limpe no final com pano úmido.'
             ]
           },
           {
