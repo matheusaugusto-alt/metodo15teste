@@ -13,7 +13,7 @@ export default function Home() {
               <PawPrint className="h-8 w-8 text-primary" />
             </div>
             <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground tracking-tight">
-              Bath Time Bliss
+              Método FICA-15
             </h1>
             <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
               Um guia passo a passo para transformar a hora do banho do seu cão em um momento de calma e conexão.
