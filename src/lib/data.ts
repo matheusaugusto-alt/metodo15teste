@@ -221,33 +221,33 @@ export const courseSteps: Step[] = [
             title: 'Dúvidas Comuns',
             icon: 'HelpCircle',
             content: [
-              '“Qual comando usar?”: Use uma palavra só (exemplo “Fica”), sempre igual, em tom curto e neutro.',
-              '“Por que pausar? Não atrasa?”: Pausa evita sobrecarga. Com pausas, o banho costuma terminar mais rápido e com menos luta.',
-              '“Posso mudar a ordem das regiões?”: Evite. Mesma ordem sempre = previsibilidade e menos sustos.',
-              '“Como segurar o cão?”: Não segure no pescoço. Use a mão aberta apoiada no quadril ou ombro, firme e suave, só como “apoio”, nunca forçando.',
-              '“E o rosto?”: Sem jato. Limpe no final com pano úmido.'
+                '“Qual comando usar?”: Use uma palavra só (exemplo “Fica”), sempre igual, em tom curto e neutro.',
+                '“Por que pausar? Não atrasa?”: Pausa evita sobrecarga. Com pausas, o banho costuma terminar mais rápido e com menos luta.',
+                '“Posso mudar a ordem das regiões?”: Evite. Mesma ordem sempre = previsibilidade e menos sustos.',
+                '“Como segurar o cão?”: Não segure no pescoço. Use a mão aberta apoiada no quadril ou ombro, firme e suave, só como “apoio”, nunca forçando.',
+                '“E o rosto?”: Sem jato. Limpe no final com pano úmido.'
             ]
           },
           {
             type: 'info',
             title: 'Aviso',
-            icon: 'AlertTriangle',
+            icon: 'Info',
             content: [
-              'O banho precisa ser sempre molhar, ensaboar e enxaguar por partes?',
-              '',
-              'Em cães ansiosos é melhor fazer por partes (ciclos curtos); molhar → ensaboar → enxaguar uma região de cada vez (traseiro/cauda → dorso/laterais → peito/pescoço → patas; rosto no pano úmido no final).',
-              '',
-              'Por quê?',
-              '- Reduz o tempo contínuo de água em cima do cão (menos estresse).',
-              '- Dá pausas programadas entre regiões (respira, lambe/ganha micro-petisco).',
-              '- Mantém previsibilidade: “termino aqui, pauso, depois a próxima parte”.',
-              '',
-              'Dica prática: Antes de começar os ciclos, faça um pré-molhado leve e rápido no corpo (exceto cabeça) por 10–20 s, só para tirar o “choque” do primeiro jato. Depois siga nos ciclos por região.',
-              '',
-              'Em cães tranquilos/experientes (banho comum); Pode molhar o corpo todo, ensaboar todo, e depois enxaguar todo — desde que:',
-              '- Você mantenha o ritmo (sem demorar com o shampoo parado na pele).',
-              '- A água esteja morna e com pressão baixa/média.',
-              '- Haja poucas pausas e o cão não mostre sinais de incômodo.'
+                'O banho precisa ser sempre molhar, ensaboar e enxaguar por partes?',
+                '',
+                'Em cães ansiosos é melhor fazer por partes (ciclos curtos); molhar → ensaboar → enxaguar uma região de cada vez (traseiro/cauda → dorso/laterais → peito/pescoço → patas; rosto no pano úmido no final).',
+                '',
+                'Por quê?',
+                '- Reduz o tempo contínuo de água em cima do cão (menos estresse).',
+                '- Dá pausas programadas entre regiões (respira, lambe/ganha micro-petisco).',
+                '- Mantém previsibilidade: “termino aqui, pauso, depois a próxima parte”.',
+                '',
+                'Dica prática: Antes de começar os ciclos, faça um pré-molhado leve e rápido no corpo (exceto cabeça) por 10–20 s, só para tirar o “choque” do primeiro jato. Depois siga nos ciclos por região.',
+                '',
+                'Em cães tranquilos/experientes (banho comum); Pode molhar o corpo todo, ensaboar todo, e depois enxaguar todo — desde que:',
+                '- Você mantenha o ritmo (sem demorar com o shampoo parado na pele).',
+                '- A água esteja morna e com pressão baixa/média.',
+                '- Haja poucas pausas e o cão não mostre sinais de incômodo.'
             ]
           },
           {
@@ -255,6 +255,8 @@ export const courseSteps: Step[] = [
             title: 'Passo a Passo (6-12 minutos)',
             icon: 'CheckSquare',
             items: [
+              { id: 's3-g0a', title: 'Cuidados importantes', actions: ['Preparar: tapete antiderrapante, toalha à mão, água morna (testada no pulso), pressão fraca a média, shampoo diluído (se usar diluição, já pronto).'] },
+              { id: 's3-g0b', title: 'Guia para decidir se dá para continuar', actions: ['Verde (cooperando): corpo solto, aceita petisco → segue.', 'Amarelo (sinais leves): lamber lábios, inquieto → pausa 30–45 s, ofereça lamber (rapidamente) e retome mais leve.', 'Vermelho (fuga/rosnado): interrompa, reduza estímulo (menos jato/menos tempo), volte 1 etapa e recomece curto.'] },
               { id: 's3-g1', title: 'Bloco 1: Traseiro/cauda', time: '40-60s', actions: ['Molhar, ensaboar e enxaguar a região.', 'Use a "mão parede" como apoio no quadril.'], hint: 'Após a ação, faça uma pausa de 30-45s com 1-2 micro-petiscos ou 20-30s de atividade de lamber.'},
               { id: 's3-g2', title: 'Bloco 2: Dorso e laterais', time: '40-60s', actions: ['Molhar, ensaboar e enxaguar, sempre de cima para baixo.', 'Use a "mão parede" como apoio no ombro.'], hint: 'Faça a mesma pausa de 30-45s do bloco anterior.'},
               { id: 's3-g3', title: 'Bloco 3: Peito e pescoço', time: '40-60s', actions: ['Molhar, ensaboar e enxaguar com cuidado.'], alert: 'Atenção para não direcionar o jato de água para o rosto. Faça uma pausa de 30-45s.'},
