@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "step1",
-      "description": "A well-organized bathroom with dog shampoo and towels ready for a bath.",
-      "imageUrl": "https://images.unsplash.com/photo-1573162274701-6f12588e35b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvcmdhbml6ZWQlMjBiYXRocm9vbXxlbnwwfHx8fDE3NTkwNTc3MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "organized bathroom"
+      "description": "A calm brown dog sitting on a mat with treats.",
+      "imageUrl": "https://storage.googleapis.com/project-spark-301511-23377.appspot.com/a42b15e4-2394-436f-8705-7286392f4949.png",
+      "imageHint": "calm dog"
     },
     {
       "id": "step2",
