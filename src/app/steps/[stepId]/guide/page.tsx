@@ -17,6 +17,10 @@ export default function GuidePage({ params }: { params: { stepId: string } }) {
 
   const stepId = params.stepId;
   const currentStepIndex = courseSteps.findIndex((s) => s.id === stepId);
+  
+  if (currentStepIndex === -1) {
+    notFound();
+  }
   const step = courseSteps[currentStepIndex];
 
   const guideItems: GuideItem[] = step?.stages.flatMap(stage =>
