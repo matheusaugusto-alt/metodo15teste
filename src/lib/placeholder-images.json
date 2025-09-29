@@ -8,9 +8,9 @@
     },
     {
       "id": "step2",
-      "description": "A person gently petting a calm dog near a bathtub.",
-      "imageUrl": "https://images.unsplash.com/photo-1747987445879-a609a7947d68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYWxtJTIwZG9nfGVufDB8fHx8MTc1OTA1NzcwMXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "calm dog"
+      "description": "A calm dog in a tub with warm water and no noise.",
+      "imageUrl": "https://storage.googleapis.com/project-spark-301511-23377.appspot.com/a9c14a27-a068-45a7-9610-d81b37803a62.png",
+      "imageHint": "calm dog bath"
     },
     {
       "id": "step3",
