@@ -35,10 +35,28 @@ const QABlock = ({ content }: { content: string[] }) => {
     return (
       <div className="space-y-3">
         {content.map((item, index) => {
-          const match = item.match(/“([^”]+)”(.*)/);
-          if (!match) return null;
-  
-          const [, question, answer] = match;
+          const separator = '?”';
+          const separatorIndex = item.indexOf(separator);
+          
+          if (separatorIndex === -1) {
+            const [question, answer] = item.split(': ');
+            if (!answer) return null;
+            return (
+              <div key={index}>
+                <div className="group/q flex items-center gap-3 rounded-xl bg-muted p-3 transition-transform duration-200 hover:-translate-y-0.5">
+                  <HelpCircle className="h-6 w-6 flex-shrink-0 text-primary" />
+                  <h4 className="font-headline text-base font-semibold text-primary">{question}</h4>
+                </div>
+                <div className="mt-2 pl-4 border-l-[3px] border-primary/70 ml-4">
+                  <p className="py-2 text-foreground/80">{answer.trim()}</p>
+                </div>
+              </div>
+            );
+          }
+
+          const question = item.substring(1, separatorIndex + 1);
+          const answer = item.substring(separatorIndex + separator.length);
+          
           return (
             <div key={index}>
               <div className="group/q flex items-center gap-3 rounded-xl bg-muted p-3 transition-transform duration-200 hover:-translate-y-0.5">
