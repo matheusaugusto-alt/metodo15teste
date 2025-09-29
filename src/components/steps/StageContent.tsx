@@ -15,9 +15,13 @@ interface StageContentProps {
 }
 
 export default function StageContent({ stage }: StageContentProps) {
+  const blocksToRender = stage.blocks.filter(block => block.type !== 'guide');
+  
+  if (blocksToRender.length === 0) return null;
+
   return (
-    <Accordion type="multiple" defaultValue={stage.blocks.map(b => b.title)} className="w-full space-y-4">
-      {stage.blocks.map((block) => {
+    <Accordion type="multiple" defaultValue={blocksToRender.map(b => b.title)} className="w-full space-y-4">
+      {blocksToRender.map((block) => {
         const IconComponent = iconMap[block.icon];
         return (
           <AccordionItem key={block.title} value={block.title} className="border bg-card rounded-2xl shadow-[0_6px_20px_rgba(27,39,94,0.08)] dark:shadow-none transition-shadow hover:shadow-lg">
@@ -38,7 +42,7 @@ export default function StageContent({ stage }: StageContentProps) {
                 </div>
               )}
               {block.content && (
-                <div className="prose prose-sm max-w-none text-muted-foreground pl-0 sm:pl-16">
+                <div className="prose prose-sm max-w-none text-foreground/80 pl-0 sm:pl-16">
                   <ul className="space-y-2">
                     {block.content.map((line, index) => (
                       <li key={index} className="pl-2">{line}</li>

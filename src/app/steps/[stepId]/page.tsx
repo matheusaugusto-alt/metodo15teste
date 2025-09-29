@@ -1,9 +1,11 @@
 import { notFound } from 'next/navigation';
 import { courseSteps } from '@/lib/data';
 import type { ChecklistItem } from '@/lib/data';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import StageContent from '@/components/steps/StageContent';
 import StepProgress from '@/components/steps/StepProgress';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { CheckSquare } from 'lucide-react';
 
 export async function generateStaticParams() {
   return courseSteps.map((step) => ({
@@ -18,6 +20,7 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
     notFound();
   }
 
+  // Flatten all checklist items from all stages and all blocks for the progress bar
   const allChecklistItems: ChecklistItem[] = step.stages.flatMap(stage =>
     stage.blocks
       .filter(block => block.type === 'checklist' && block.items)
@@ -47,20 +50,26 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
         )}
       </div>
 
-      <Tabs defaultValue={step.stages[0].id} className="w-full">
-        <TabsList className="w-full h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {step.stages.map((stage) => (
-            <TabsTrigger key={stage.id} value={stage.id} className="text-sm">
-              {stage.title}
-            </TabsTrigger>
-          ))}
-        </TabsList>
+      <div className='bg-card border rounded-2xl p-6 my-8'>
+          <div className='flex flex-col sm:flex-row items-center gap-4'>
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary flex-shrink-0">
+              <CheckSquare className="h-6 w-6" />
+            </div>
+            <div className='flex-grow'>
+              <h2 className='font-headline text-xl font-bold'>Passo a Passo Detalhado</h2>
+              <p className='text-muted-foreground mt-1'>Siga as ações em cartões interativos para uma experiência guiada.</p>
+            </div>
+            <Button asChild size="lg">
+              <Link href={`/steps/${step.id}/guide`}>Iniciar Passo a Passo</Link>
+            </Button>
+          </div>
+        </div>
+
+      <div className="w-full space-y-4">
         {step.stages.map((stage) => (
-          <TabsContent key={stage.id} value={stage.id} className="mt-6">
-            <StageContent stage={stage} />
-          </TabsContent>
+          <StageContent key={stage.id} stage={stage} />
         ))}
-      </Tabs>
+      </div>
     </div>
   );
 }
