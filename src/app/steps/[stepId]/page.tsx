@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { courseSteps } from '@/lib/data';
-import type { ChecklistItem, ContentBlock } from '@/lib/data';
+import type { ChecklistItem, ContentBlock, Stage } from '@/lib/data';
 import StageContent from '@/components/steps/StageContent';
 import StepProgress from '@/components/steps/StepProgress';
 import { Button } from '@/components/ui/button';
@@ -28,6 +28,23 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
   );
 
   const hasGuide = step.stages.some(stage => stage.blocks.some(block => block.type === 'guide'));
+  
+  // Separate checklist blocks from other content blocks
+  const contentStages: Stage[] = [];
+  const checklistStages: Stage[] = [];
+
+  step.stages.forEach(stage => {
+    const contentBlocks = stage.blocks.filter(b => b.type !== 'checklist' && b.type !== 'guide');
+    const checklistBlocks = stage.blocks.filter(b => b.type === 'checklist');
+
+    if (contentBlocks.length > 0) {
+      contentStages.push({ ...stage, blocks: contentBlocks });
+    }
+    if (checklistBlocks.length > 0) {
+      checklistStages.push({ ...stage, blocks: checklistBlocks });
+    }
+  });
+
 
   return (
     <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
@@ -53,11 +70,9 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
       </div>
 
       <div className="w-full space-y-4 mb-8">
-        {step.stages.map((stage) => {
-          // Filter out guide blocks to render them separately
-          const stageBlocks = stage.blocks.filter(b => b.type !== 'guide');
-          return <StageContent key={stage.id} stage={{ ...stage, blocks: stageBlocks }} />;
-        })}
+        {contentStages.map((stage) => (
+          <StageContent key={stage.id} stage={stage} />
+        ))}
       </div>
 
       {hasGuide && (
@@ -76,6 +91,12 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
             </div>
           </div>
       )}
+
+      <div className="w-full space-y-4 mb-8">
+        {checklistStages.map((stage) => (
+            <StageContent key={stage.id} stage={stage} />
+        ))}
+      </div>
     </div>
   );
 }
