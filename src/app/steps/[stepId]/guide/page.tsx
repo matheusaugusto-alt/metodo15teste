@@ -13,8 +13,7 @@ import { useProgress } from '@/hooks/use-progress';
 
 export default function GuidePage({ params }: { params: { stepId: string } }) {
   const router = useRouter();
-  const { toggleItemCompletion, isItemCompleted } = useProgress();
-
+  
   const stepId = params.stepId;
   const currentStepIndex = courseSteps.findIndex((s) => s.id === stepId);
   
@@ -45,19 +44,8 @@ export default function GuidePage({ params }: { params: { stepId: string } }) {
   };
 
   const GuideItemCard = ({ item, index }: { item: GuideItem, index: number }) => {
-    const [isCompleted, setIsCompleted] = useState(isItemCompleted(item.id));
-  
-    useEffect(() => {
-      setIsCompleted(isItemCompleted(item.id));
-    }, [isItemCompleted, item.id]);
-
-    const handleComplete = () => {
-      toggleItemCompletion(item.id);
-      setIsCompleted(!isCompleted);
-    };
-
     return (
-      <Card className={`w-full transition-all duration-300 ${isCompleted ? 'border-green-500 shadow-lg' : 'shadow-sm'}`}>
+      <Card className="w-full transition-all duration-300 shadow-sm">
         <CardHeader>
           <div className="flex items-start justify-between gap-4">
             <div className="flex items-center gap-4">
@@ -104,12 +92,6 @@ export default function GuidePage({ params }: { params: { stepId: string } }) {
           )}
 
         </CardContent>
-        <CardFooter className="flex justify-end">
-          <Button variant={isCompleted ? 'secondary' : 'default'} onClick={handleComplete}>
-            <Check className="mr-2 h-4 w-4" />
-            {isCompleted ? 'Desmarcar' : 'Concluir Passo'}
-          </Button>
-        </CardFooter>
       </Card>
     )
   }
