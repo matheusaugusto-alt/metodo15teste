@@ -50,6 +50,12 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
         )}
       </div>
 
+      <div className="w-full space-y-4">
+        {step.stages.map((stage) => (
+          <StageContent key={stage.id} stage={stage} />
+        ))}
+      </div>
+
       <div className='bg-card border rounded-2xl p-6 my-8'>
           <div className='flex flex-col sm:flex-row items-center gap-4'>
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary flex-shrink-0">
@@ -64,12 +70,6 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
             </Button>
           </div>
         </div>
-
-      <div className="w-full space-y-4">
-        {step.stages.map((stage) => (
-          <StageContent key={stage.id} stage={stage} />
-        ))}
-      </div>
     </div>
   );
 }
