@@ -78,9 +78,9 @@ export const courseSteps: Step[] = [
             title: 'Dúvidas Comuns',
             icon: 'HelpCircle',
             content: [
-              '“Preciso gastar a energia do meu cão antes do banho?” Sim, mas não com brincadeiras de alta excitação (bola, pega-pega, cabo de guerra). Isso eleva adrenalina e dificulta a calma. Prefira gastar energia mental: farejar e mastigar/lamber.',
-              '“E se eu der um passeio rápido?” Pode, se for passeio olfativo (curto, em ritmo lento, deixando cheirar). Evite corrida e puxões.',
-              '“Meu cão não liga para petiscos quando está ansioso. E agora?” Afaste do box 1–2 m, comece com farejo mais longe e use um petisco mais saboroso. Se ainda recusar, pare hoje e tente outro horário.',
+              '“Preciso gastar a energia do meu cão antes do banho?”: Sim, mas não com brincadeiras de alta excitação (bola, pega-pega, cabo de guerra). Isso eleva adrenalina e dificulta a calma. Prefira gastar energia mental: farejar e mastigar/lamber.',
+              '“E se eu der um passeio rápido?”: Pode, se for passeio olfativo (curto, em ritmo lento, deixando cheirar). Evite corrida e puxões.',
+              '“Meu cão não liga para petiscos quando está ansioso. E agora?”: Afaste do box 1–2 m, comece com farejo mais longe e use um petisco mais saboroso. Se ainda recusar, pare hoje e tente outro horário.',
               '“Quanto tempo dura?”: 3–6 min (sensíveis: 6–8 min). Mais importante que o relógio é ver corpo solto e aceitando petisco.'
             ],
           },
@@ -89,11 +89,11 @@ export const courseSteps: Step[] = [
             title: 'Principais Erros',
             icon: 'AlertTriangle',
             content: [
-              'Brincadeira agitada antes do banho (bola, pega-pega, cabo de guerra): deixa o cachorro “aceso”; Corrija: troque por farejar e lamber/roer devagar.',
-              'Não checar o estado emocional: você começa com ele já tenso; Corrija: Analise o comportamento do cachorro conforme as orientações que serão passadas.',
-              'Água ligada durante a descompressão: barulho e respingos aumentam alerta; Corrija: água sempre desligada até terminar esta fase.',
-              'Chão escorregadio: medo de escorregar aumenta a tensão; Corrija: tapete antiderrapante já colocado dentro do box.',
-              'Deixar roer/lamber por tempo demais: perde foco e valor do prêmio; Corrija: 60 a 90 segundos e interrompa ainda com vontade.'
+              'Brincadeira agitada antes do banho (bola, pega-pega, cabo de guerra): Atrapalha: deixa o cachorro “aceso”; Corrija: troque por farejar e lamber/roer devagar.',
+              'Não checar o estado emocional: Atrapalha: você começa com ele já tenso; Corrija: Analise o comportamento do cachorro conforme as orientações que serão passadas.',
+              'Água ligada durante a descompressão: Atrapalha: barulho e respingos aumentam alerta; Corrija: água sempre desligada até terminar esta fase.',
+              'Chão escorregadio: Atrapalha: medo de escorregar aumenta a tensão; Corrija: tapete antiderrapante já colocado dentro do box.',
+              'Deixar roer/lamber por tempo demais: Atrapalha: perde foco e valor do prêmio; Corrija: 60 a 90 segundos e interrompa ainda com vontade.'
             ],
           },
           {
@@ -158,10 +158,10 @@ export const courseSteps: Step[] = [
             title: 'Dúvidas Comuns',
             icon: 'HelpCircle',
             content: [
-              'Precisa ligar a água já? Não. Primeiro deixe o cão seguro no espaço (chão firme, sem ruídos). A água entra só depois do ambiente estar tranquilo.',
-              'Qual temperatura usar? Morna confortável. Teste no pulso: não pode queimar, nem gelar. Tem que parecer neutra.',
-              'Pressão forte é melhor pra enxaguar mais rápido? Não. Comece fraco, com um filete fino. Velocidade vem depois.',
-              'Mostro a duchinha no corpo logo? Não. Primeiro duchinha desligada; depois pingos no tapete, depois filete nas patas.'
+              '“Precisa ligar a água já?”: Não. Primeiro deixe o cão seguro no espaço (chão firme, sem ruídos). A água entra só depois do ambiente estar tranquilo.',
+              '“Qual temperatura usar?”: Morna confortável. Teste no pulso: não pode queimar, nem gelar. Tem que parecer neutra.',
+              '“Pressão forte é melhor pra enxaguar mais rápido?”: Não. Comece fraco, com um filete fino. Velocidade vem depois.',
+              '“Mostro a duchinha no corpo logo?”: Não. Primeiro duchinha desligada; depois pingos no tapete, depois filete nas patas.'
             ],
           },
            {
@@ -306,11 +306,11 @@ export const courseSteps: Step[] = [
             title: 'Dúvidas Comuns',
             icon: 'HelpCircle',
             content: [
-              'Preciso usar secador sempre? Não. Se a pelagem for curta e o clima ajudar, toalha já resolve. Use secador quando for necessário (pelagem densa/tempo frio).',
-              'Qual a temperatura do ar? Morno confortável. O que seca é o fluxo de ar, não calor parado.',
-              'Começo soprando a cabeça? Não. Cabeça e orelhas ficam por último ou fora; seque com toalha/pano.',
-              'Lamber não vai “empanturrar”? Não, se for camada fina e por tempo curto (recolher antes de enjoar).',
-              'E se ele tiver medo do barulho? Comece longe e fraco, com micro-janelas de 30–60 s. Suba de nível só se estiver calmo.'
+              '“Preciso usar secador sempre?”: Não. Se a pelagem for curta e o clima ajudar, toalha já resolve. Use secador quando for necessário (pelagem densa/tempo frio).',
+              '“Qual a temperatura do ar?”: Morno confortável. O que seca é o fluxo de ar, não calor parado.',
+              '“Começo soprando a cabeça?”: Não. Cabeça e orelhas ficam por último ou fora; seque com toalha/pano.',
+              '“Lamber não vai “empanturrar”?”: Não, se for camada fina e por tempo curto (recolher antes de enjoar).',
+              '“E se ele tiver medo do barulho?”: Comece longe e fraco, com micro-janelas de 30–60 s. Suba de nível só se estiver calmo.'
             ]
           },
           {
