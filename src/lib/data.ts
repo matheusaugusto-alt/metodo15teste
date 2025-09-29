@@ -159,7 +159,7 @@ export const courseSteps: Step[] = [
             icon: 'HelpCircle',
             content: [
               '“Precisa ligar a água já?”: Não. Primeiro deixe o cão seguro no espaço (chão firme, sem ruídos). A água entra só depois do ambiente estar tranquilo.',
-              '“Qual temperatura usar?”: Morna confortável. Teste no pulso, não pode queimar, nem gelar. Tem que parecer neutra.',
+              '“Qual temperatura usar?”: Morna confortável. Teste no pulso: não pode queimar, nem gelar. Tem que parecer neutra.',
               '“Pressão forte é melhor pra enxaguar mais rápido?”: Não. Comece fraco, com um filete fino. Velocidade vem depois.',
               '“Mostro a duchinha no corpo logo?”: Não. Primeiro duchinha desligada; depois pingos no tapete, depois filete nas patas.'
             ],
@@ -222,11 +222,11 @@ export const courseSteps: Step[] = [
             title: 'Dúvidas Comuns',
             icon: 'HelpCircle',
             content: [
-              'Qual comando usar? Use uma palavra só (ex.: “Fica”), sempre igual, em tom curto e neutro.',
-              'Por que pausar? Não atrasa? Pausa evita sobrecarga. Com pausas, o banho costuma terminar mais rápido e com menos luta.',
-              'Posso mudar a ordem das regiões? Evite. Mesma ordem sempre = previsibilidade e menos sustos.',
-              'Como segurar o cão? Não segure no pescoço. Use a “mão parede”: mão aberta apoiada no quadril ou ombro, firme e suave, só como “apoio”, nunca forçando.',
-              'E o rosto? Sem jato. Limpe no final com pano úmido.'
+              'Qual comando usar?: Use uma palavra só (ex.: “Fica”), sempre igual, em tom curto e neutro.',
+              'Por que pausar? Não atrasa?: Pausa evita sobrecarga. Com pausas, o banho costuma terminar mais rápido e com menos luta.',
+              'Posso mudar a ordem das regiões?: Evite. Mesma ordem sempre = previsibilidade e menos sustos.',
+              'Como segurar o cão?: Não segure no pescoço. Use a “mão parede”: mão aberta apoiada no quadril ou ombro, firme e suave, só como “apoio”, nunca forçando.',
+              'E o rosto?: Sem jato. Limpe no final com pano úmido.'
             ]
           },
           {
