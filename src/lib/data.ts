@@ -235,14 +235,14 @@ export const courseSteps: Step[] = [
             content: [
                 'O banho precisa ser sempre molhar, ensaboar e enxaguar por partes?',
                 '',
-                'Em cães ansiosos é melhor fazer por partes (ciclos curtos); molhar → ensaboar → enxaguar uma região de cada vez (traseiro/cauda → dorso/laterais → peito/pescoço → patas; rosto no pano úmido no final).',
+                'Em cães ansiosos é melhor fazer por partes (ciclos curtos); molhar → ensaboar → enxaguar uma região de cada vez (traseiro/cauda → dorso/laterais → peito/pescoço → patas; rosto no pano úmido no final). ',
                 '',
                 'Por quê?',
-                '- Reduz o tempo contínuo de água em cima do cão (menos estresse).',
-                '- Dá pausas programadas entre regiões (respira, lambe/ganha micro-petisco).',
-                '- Mantém previsibilidade: “termino aqui, pauso, depois a próxima parte”.',
+                '- Reduz o tempo contínuo de água em cima do cão (menos estresse). ',
+                '- Dá pausas programadas entre regiões (respira, lambe/ganha micro-petisco). ',
+                '- Mantém previsibilidade: “termino aqui, pauso, depois a próxima parte”. ',
                 '',
-                'Dica prática: Antes de começar os ciclos, faça um pré-molhado leve e rápido no corpo (exceto cabeça) por 10–20 s, só para tirar o “choque” do primeiro jato. Depois siga nos ciclos por região.',
+                'Dica prática: Antes de começar os ciclos, faça um pré-molhado leve e rápido no corpo (exceto cabeça) por 10–20 s, só para tirar o “choque” do primeiro jato. Depois siga nos ciclos por região. ',
                 '',
                 'Em cães tranquilos/experientes (banho comum); Pode molhar o corpo todo, ensaboar todo, e depois enxaguar todo — desde que:',
                 '',
@@ -282,7 +282,6 @@ export const courseSteps: Step[] = [
               { id: 's3-c10', text: 'Mão parede em quadril/ombro (nunca pescoço)' },
               { id: 's3-c12', text: 'Sem Jato no rosto' },
               { id: 's3-c14', text: 'Sem pular pausas' },
-              { id: 's3-c15', text: 'Plano de contingência: Parar, reduzir estímulo, voltar 1 etapa, pausar, ou encerrar.' },
             ]
           }
         ]
@@ -372,3 +371,4 @@ export const iconMap = {
     
 
     
+
