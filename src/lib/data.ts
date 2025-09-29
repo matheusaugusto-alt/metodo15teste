@@ -159,7 +159,7 @@ export const courseSteps: Step[] = [
             icon: 'HelpCircle',
             content: [
               '“Precisa ligar a água já?”: Não. Primeiro deixe o cão seguro no espaço (chão firme, sem ruídos). A água entra só depois do ambiente estar tranquilo.',
-              '“Qual temperatura usar?”: Morna confortável. Teste no pulso: não pode queimar, nem gelar. Tem que parecer neutra.',
+              '“Qual temperatura usar?”: Morna confortável. Teste no pulso, não pode queimar, nem gelar. Tem que parecer neutra.',
               '“Pressão forte é melhor pra enxaguar mais rápido?”: Não. Comece fraco, com um filete fino. Velocidade vem depois.',
               '“Mostro a duchinha no corpo logo?”: Não. Primeiro duchinha desligada; depois pingos no tapete, depois filete nas patas.'
             ],
