@@ -22,12 +22,12 @@ export default function Home() {
           <div className="relative h-80 lg:h-full min-h-[300px] rounded-3xl overflow-hidden shadow-lg shadow-primary/10">
              <div className="absolute inset-0 bg-gradient-to-t from-primary via-cyan-400 to-transparent opacity-20"></div>
             <Image
-              src="https://storage.googleapis.com/aif-starlark-docs-test/71329b3c-a763-4c9f-b765-1d96082ac971.jpeg"
-              alt="Happy dog getting a bath illustration"
+              src="https://picsum.photos/seed/happydog/800/600"
+              alt="Happy dog"
               fill
               priority
               className="object-cover"
-              data-ai-hint="happy dog bath"
+              data-ai-hint="happy dog"
             />
           </div>
         </div>
