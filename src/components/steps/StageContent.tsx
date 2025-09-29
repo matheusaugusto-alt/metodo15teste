@@ -15,12 +15,9 @@ interface StageContentProps {
 }
 
 export default function StageContent({ stage }: StageContentProps) {
-  // Filter out 'guide' blocks, as they are handled on a separate page.
-  const allBlocks = stage.blocks.filter(block => block.type !== 'guide');
-  
-  // Separate 'checklist' blocks from the others.
-  const checklistBlocks = allBlocks.filter(block => block.type === 'checklist');
-  const otherBlocks = allBlocks.filter(block => block.type !== 'checklist');
+  // Separate 'checklist' blocks from the others to render them last.
+  const checklistBlocks = stage.blocks.filter(block => block.type === 'checklist');
+  const otherBlocks = stage.blocks.filter(block => block.type !== 'checklist');
 
   // Recombine, ensuring checklists are always at the end.
   const blocksToRender = [...otherBlocks, ...checklistBlocks];

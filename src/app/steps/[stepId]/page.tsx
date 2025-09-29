@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { courseSteps } from '@/lib/data';
-import type { ChecklistItem } from '@/lib/data';
+import type { ChecklistItem, ContentBlock } from '@/lib/data';
 import StageContent from '@/components/steps/StageContent';
 import StepProgress from '@/components/steps/StepProgress';
 import { Button } from '@/components/ui/button';
@@ -27,6 +27,8 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
       .flatMap(block => block.items as ChecklistItem[])
   );
 
+  const hasGuide = step.stages.some(stage => stage.blocks.some(block => block.type === 'guide'));
+
   return (
     <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
       <div className="mb-8 sm:mb-12">
@@ -51,25 +53,29 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
       </div>
 
       <div className="w-full space-y-4 mb-8">
-        {step.stages.map((stage) => (
-          <StageContent key={stage.id} stage={stage} />
-        ))}
+        {step.stages.map((stage) => {
+          // Filter out guide blocks to render them separately
+          const stageBlocks = stage.blocks.filter(b => b.type !== 'guide');
+          return <StageContent key={stage.id} stage={{ ...stage, blocks: stageBlocks }} />;
+        })}
       </div>
 
-      <div className='bg-card border rounded-2xl p-6 my-8'>
-          <div className='flex flex-col sm:flex-row items-center gap-4'>
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary flex-shrink-0">
-              <CheckSquare className="h-6 w-6" />
+      {hasGuide && (
+        <div className='bg-card border rounded-2xl p-6 my-8'>
+            <div className='flex flex-col sm:flex-row items-center gap-4'>
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary flex-shrink-0">
+                <CheckSquare className="h-6 w-6" />
+              </div>
+              <div className='flex-grow'>
+                <h2 className='font-headline text-xl font-bold'>Passo a Passo Detalhado</h2>
+                <p className='text-muted-foreground mt-1'>Siga as ações em cartões interativos para uma experiência guiada.</p>
+              </div>
+              <Button asChild size="lg">
+                <Link href={`/steps/${step.id}/guide`}>Iniciar Passo a Passo</Link>
+              </Button>
             </div>
-            <div className='flex-grow'>
-              <h2 className='font-headline text-xl font-bold'>Passo a Passo Detalhado</h2>
-              <p className='text-muted-foreground mt-1'>Siga as ações em cartões interativos para uma experiência guiada.</p>
-            </div>
-            <Button asChild size="lg">
-              <Link href={`/steps/${step.id}/guide`}>Iniciar Passo a Passo</Link>
-            </Button>
           </div>
-        </div>
+      )}
     </div>
   );
 }
