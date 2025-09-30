@@ -45,10 +45,10 @@ export type Step = {
 
 // Mapeamento de IDs para os novos caminhos de imagem locais
 const stepImages: Record<string, { url: string; hint: string }> = {
-  step1: { url: '/images/step1.png', hint: 'calm dog' },
-  step2: { url: '/images/step2.png', hint: 'calm dog bath' },
-  step3: { url: '/images/step3.png', hint: 'dog wash' },
-  step4: { url: '/images/step4.png', hint: 'dog drying' },
+  step1: { url: 'https://i.imgur.com/5J3t33T.png', hint: 'calm dog' },
+  step2: { url: 'https://i.imgur.com/j5g7z9S.png', hint: 'calm dog bath' },
+  step3: { url: 'https://i.imgur.com/iR3UnjN.png', hint: 'dog wash' },
+  step4: { url: 'https://i.imgur.com/iAnq2DR.png', hint: 'dog drying' },
 };
 
 const placeholderImage = (id: string) => {

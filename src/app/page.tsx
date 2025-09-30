@@ -22,7 +22,7 @@ export default function Home() {
           <div className="relative h-80 lg:h-full min-h-[300px] rounded-3xl overflow-hidden shadow-lg shadow-primary/10">
              <div className="absolute inset-0 bg-gradient-to-t from-primary via-cyan-400 to-transparent opacity-20"></div>
             <Image
-              src="https://images.unsplash.com/photo-1557495213-3c3a24f11b61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkb2clMjBiYXRofGVufDB8fHx8MTc1OTA1OTEzOXww&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://i.imgur.com/w1i38w2.png"
               alt="Happy dog getting a bath"
               fill
               priority
