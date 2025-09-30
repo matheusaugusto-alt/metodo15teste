@@ -61,7 +61,7 @@ export const courseSteps: Step[] = [
     description: 'Acalme seu cão antes do banho.',
     longDescription: 'O objetivo é baixar o nível de excitação para o cão entrar mais calmo no box. Este é um "aquecimento emocional" para diminuir a agitação antes do banho.',
     icon: Home,
-    image: placeholderImage('step1'),
+    image: { url: 'https://i.imgur.com/MKuSj5w.jpeg', hint: 'calm dog' },
     stages: [
       {
         id: 's1-stage1',
@@ -140,7 +140,7 @@ export const courseSteps: Step[] = [
     description: 'Remova gatilhos e torne o ambiente previsível.',
     longDescription: 'O objetivo é remover gatilhos de medo/fuga e deixar o ambiente previsível. Medo de escorregar, água fria/quente demais e barulho antecipado sabotam a cooperação.',
     icon: Heart,
-    image: placeholderImage('step2'),
+    image: { url: 'https://i.imgur.com/YPPEUpy.jpeg', hint: 'calm dog bath' },
     stages: [
       {
         id: 's2-stage1',
@@ -205,7 +205,7 @@ export const courseSteps: Step[] = [
     description: 'Técnicas para um banho eficaz.',
     longDescription: 'Com o cão mais calmo e o ambiente preparado, o banho pode começar. Mantenha a calma e siga um processo lógico para ser rápido e eficiente.',
     icon: ShowerHead,
-    image: placeholderImage('step3'),
+    image: { url: 'https://i.imgur.com/0FXHOwq.jpeg', hint: 'dog wash' },
     stages: [
       {
         id: 's3-stage1',
