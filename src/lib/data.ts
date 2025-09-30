@@ -43,7 +43,6 @@ export type Step = {
   stages: Stage[];
 };
 
-// Mapeamento de IDs para os novos caminhos de imagem locais
 const stepImages: Record<string, { url: string; hint: string }> = {
   step1: { url: 'https://i.imgur.com/5J3t33T.png', hint: 'calm dog' },
   step2: { url: 'https://i.imgur.com/j5g7z9S.png', hint: 'calm dog bath' },
@@ -381,3 +380,4 @@ export const iconMap = {
 
 
     
+
