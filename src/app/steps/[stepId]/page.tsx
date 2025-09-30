@@ -5,7 +5,7 @@ import StageContent from '@/components/steps/StageContent';
 import StepProgress from '@/components/steps/StepProgress';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { CheckSquare } from 'lucide-react';
+import { CheckSquare, ArrowRight } from 'lucide-react';
 
 export async function generateStaticParams() {
   return courseSteps.map((step) => ({
@@ -14,11 +14,15 @@ export async function generateStaticParams() {
 }
 
 export default function StepPage({ params }: { params: { stepId: string } }) {
-  const step = courseSteps.find((s) => s.id === params.stepId);
-
-  if (!step) {
+  const currentStepIndex = courseSteps.findIndex((s) => s.id === params.stepId);
+  
+  if (currentStepIndex === -1) {
     notFound();
   }
+  
+  const step = courseSteps[currentStepIndex];
+  const isLastStep = currentStepIndex === courseSteps.length - 1;
+  const nextStep = isLastStep ? null : courseSteps[currentStepIndex + 1];
 
   // Flatten all checklist items from all stages and all blocks for the progress bar
   const allChecklistItems: ChecklistItem[] = step.stages.flatMap(stage =>
@@ -96,6 +100,15 @@ export default function StepPage({ params }: { params: { stepId: string } }) {
         {checklistStages.map((stage) => (
             <StageContent key={stage.id} stage={stage} />
         ))}
+      </div>
+
+      <div className='flex justify-end pt-6 border-t'>
+          <Button asChild size="lg">
+            <Link href={isLastStep ? '/' : `/steps/${nextStep?.id}`}>
+              {isLastStep ? 'Finalizar Curso' : 'Próximo Passo'}
+              {!isLastStep && <ArrowRight className="ml-2 h-5 w-5" />}
+            </Link>
+          </Button>
       </div>
     </div>
   );
