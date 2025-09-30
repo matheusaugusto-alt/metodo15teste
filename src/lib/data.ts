@@ -1,4 +1,3 @@
-
 import type { LucideIcon } from 'lucide-react';
 import { Home, Heart, ShowerHead, Award, Info, HelpCircle, ListChecks, CheckSquare, AlertTriangle } from 'lucide-react';
 
@@ -43,17 +42,6 @@ export type Step = {
   stages: Stage[];
 };
 
-const stepImages: Record<string, { url: string; hint: string }> = {
-  step1: { url: 'https://i.imgur.com/S1abA3F.jpeg', hint: 'calm dog' },
-  step2: { url: 'https://i.imgur.com/j5g7z9S.jpeg', hint: 'calm dog bath' },
-  step3: { url: 'https://i.imgur.com/iR3UnjN.jpeg', hint: 'dog wash' },
-  step4: { url: 'https://i.imgur.com/iAnq2DR.jpeg', hint: 'dog drying' },
-};
-
-const placeholderImage = (id: string) => {
-    return stepImages[id] || { url: 'https://picsum.photos/seed/default/600/400', hint: 'placeholder' };
-}
-
 export const courseSteps: Step[] = [
   {
     id: 'step-1',
@@ -61,7 +49,7 @@ export const courseSteps: Step[] = [
     description: 'Acalme seu cão antes do banho.',
     longDescription: 'O objetivo é baixar o nível de excitação para o cão entrar mais calmo no box. Este é um "aquecimento emocional" para diminuir a agitação antes do banho.',
     icon: Home,
-    image: { url: 'https://i.imgur.com/MKuSj5w.jpeg', hint: 'calm dog' },
+    image: { url: 'https://i.imgur.com/HUXwhfW.png', hint: 'calm dog' },
     stages: [
       {
         id: 's1-stage1',
@@ -140,7 +128,7 @@ export const courseSteps: Step[] = [
     description: 'Remova gatilhos e torne o ambiente previsível.',
     longDescription: 'O objetivo é remover gatilhos de medo/fuga e deixar o ambiente previsível. Medo de escorregar, água fria/quente demais e barulho antecipado sabotam a cooperação.',
     icon: Heart,
-    image: { url: 'https://i.imgur.com/YPPEUpy.jpeg', hint: 'calm dog bath' },
+    image: { url: 'https://i.imgur.com/1UPd1wM.png', hint: 'calm dog bath' },
     stages: [
       {
         id: 's2-stage1',
@@ -205,7 +193,7 @@ export const courseSteps: Step[] = [
     description: 'Técnicas para um banho eficaz.',
     longDescription: 'Com o cão mais calmo e o ambiente preparado, o banho pode começar. Mantenha a calma e siga um processo lógico para ser rápido e eficiente.',
     icon: ShowerHead,
-    image: { url: 'https://i.imgur.com/0FXHOwq.jpeg', hint: 'dog wash' },
+    image: { url: 'https://i.imgur.com/ycJ84v4.png', hint: 'dog wash' },
     stages: [
       {
         id: 's3-stage1',
@@ -298,7 +286,7 @@ export const courseSteps: Step[] = [
     description: 'Finalize com carinho e diversão.',
     longDescription: 'A experiência do banho não termina quando a água desliga. A secagem e a recompensa final são essenciais para selar a experiência positiva.',
     icon: Award,
-    image: { url: 'https://i.imgur.com/iAnq2DR.jpeg', hint: 'dog drying' },
+    image: { url: 'https://i.imgur.com/l1CtnFR.png', hint: 'dog drying' },
     stages: [
       {
         id: 's4-stage1',
@@ -387,4 +375,5 @@ export const iconMap = {
     
 
     
+
 
