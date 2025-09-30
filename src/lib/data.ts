@@ -44,7 +44,7 @@ export type Step = {
 };
 
 const stepImages: Record<string, { url: string; hint: string }> = {
-  step1: { url: 'https://i.imgur.com/5J3t33T', hint: 'calm dog' },
+  step1: { url: 'https://i.imgur.com/5J3t33T.jpeg', hint: 'calm dog' },
   step2: { url: 'https://i.imgur.com/j5g7z9S', hint: 'calm dog bath' },
   step3: { url: 'https://i.imgur.com/iR3UnjN', hint: 'dog wash' },
   step4: { url: 'https://i.imgur.com/iAnq2DR', hint: 'dog drying' },
@@ -382,3 +382,6 @@ export const iconMap = {
     
 
 
+
+
+    
