@@ -1,28 +1,3 @@
 {
-  "placeholderImages": [
-    {
-      "id": "step1",
-      "description": "A calm brown dog sitting on a mat with treats.",
-      "imageUrl": "https://storage.googleapis.com/project-spark-301511-23377.appspot.com/a42b15e4-2394-436f-8705-7286392f4949.png",
-      "imageHint": "calm dog"
-    },
-    {
-      "id": "step2",
-      "description": "A calm dog in a tub with warm water and no noise.",
-      "imageUrl": "https://storage.googleapis.com/project-spark-301511-23377.appspot.com/a9c14a27-a068-45a7-9610-d81b37803a62.png",
-      "imageHint": "calm dog bath"
-    },
-    {
-      "id": "step3",
-      "description": "A happy dog being gently washed in a bathtub.",
-      "imageUrl": "https://storage.googleapis.com/project-spark-301511-23377.appspot.com/13c1f19d-7a0c-4e8c-9c71-33161c28c89c.png",
-      "imageHint": "dog wash"
-    },
-    {
-      "id": "step4",
-      "description": "A fluffy, clean dog wrapped in a towel receiving a treat.",
-      "imageUrl": "https://storage.googleapis.com/project-spark-301511-23377.appspot.com/6c8577a7-55e1-45f8-8098-9635f7915525.png",
-      "imageHint": "dog drying"
-    }
-  ]
+  "placeholderImages": []
 }

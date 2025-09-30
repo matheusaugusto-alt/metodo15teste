@@ -1,7 +1,6 @@
 
 import type { LucideIcon } from 'lucide-react';
 import { Home, Heart, ShowerHead, Award, Info, HelpCircle, ListChecks, CheckSquare, AlertTriangle } from 'lucide-react';
-import { PlaceHolderImages } from './placeholder-images';
 
 export type ChecklistItem = {
   id: string;
@@ -44,10 +43,16 @@ export type Step = {
   stages: Stage[];
 };
 
+// Mapeamento de IDs para os novos caminhos de imagem locais
+const stepImages: Record<string, { url: string; hint: string }> = {
+  step1: { url: '/images/step1.png', hint: 'calm dog' },
+  step2: { url: '/images/step2.png', hint: 'calm dog bath' },
+  step3: { url: '/images/step3.png', hint: 'dog wash' },
+  step4: { url: '/images/step4.png', hint: 'dog drying' },
+};
+
 const placeholderImage = (id: string) => {
-    const img = PlaceHolderImages.find(p => p.id === id);
-    if (!img) return { url: 'https://picsum.photos/seed/default/600/400', hint: 'placeholder' };
-    return { url: img.imageUrl, hint: img.imageHint };
+    return stepImages[id] || { url: 'https://picsum.photos/seed/default/600/400', hint: 'placeholder' };
 }
 
 export const courseSteps: Step[] = [
@@ -373,3 +378,6 @@ export const iconMap = {
     
 
 
+
+
+    
