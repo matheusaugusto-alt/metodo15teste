@@ -36,7 +36,6 @@ export default function LoginPage() {
       });
       setLoading(false);
     } else {
-      setLoading(false);
       // Force a full page reload to ensure middleware recognizes the new session.
       window.location.href = '/';
     }
