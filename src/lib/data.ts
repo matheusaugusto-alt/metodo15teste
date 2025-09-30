@@ -298,7 +298,7 @@ export const courseSteps: Step[] = [
     description: 'Finalize com carinho e diversão.',
     longDescription: 'A experiência do banho não termina quando a água desliga. A secagem e a recompensa final são essenciais para selar a experiência positiva.',
     icon: Award,
-    image: placeholderImage('step4'),
+    image: { url: 'https://i.imgur.com/iAnq2DR.jpeg', hint: 'dog drying' },
     stages: [
       {
         id: 's4-stage1',
@@ -387,3 +387,4 @@ export const iconMap = {
     
 
     
+
