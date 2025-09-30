@@ -16,7 +16,7 @@ const fontHeadline = Lexend({
 
 
 export const metadata: Metadata = {
-  title: 'Bath Time Bliss',
+  title: 'Método FICA-15',
   description: 'A step-by-step guide to a calm bath for your dog.',
   manifest: '/manifest.json',
 };
