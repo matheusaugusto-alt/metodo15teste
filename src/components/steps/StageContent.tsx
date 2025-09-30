@@ -107,7 +107,7 @@ export default function StageContent({ stage }: StageContentProps) {
   if (blocksToRender.length === 0) return null;
 
   return (
-    <Accordion type="multiple" defaultValue={blocksToRender.map(b => b.title)} className="w-full space-y-4">
+    <Accordion type="multiple" className="w-full space-y-4">
       {blocksToRender.map((block) => {
         const IconComponent = iconMap[block.icon];
         return (
