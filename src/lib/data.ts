@@ -129,7 +129,7 @@ export const courseSteps: Step[] = [
     description: 'Remova gatilhos e torne o ambiente previsível.',
     longDescription: 'O objetivo é remover gatilhos de medo/fuga e deixar o ambiente previsível. Medo de escorregar, água fria/quente demais e barulho antecipado sabotam a cooperação.',
     icon: Heart,
-    image: { url: 'https://i.imgur.com/1UPd1wM.png', hint: 'calm dog bath' },
+    image: { url: 'https://i.imgur.com/QLfeo4T.jpeg', hint: 'calm dog bath' },
     stages: [
       {
         id: 's2-stage1',
@@ -379,5 +379,7 @@ export const iconMap = {
 
 
 
+
+    
 
     
