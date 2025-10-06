@@ -194,7 +194,7 @@ export const courseSteps: Step[] = [
     description: 'Técnicas para um banho eficaz.',
     longDescription: 'Com o cão mais calmo e o ambiente preparado, o banho pode começar. Mantenha a calma e siga um processo lógico para ser rápido e eficiente.',
     icon: ShowerHead,
-    image: { url: 'https://i.imgur.com/ycJ84v4.png', hint: 'dog wash' },
+    image: { url: 'https://i.imgur.com/p9HlYHc.jpeg', hint: 'dog wash' },
     stages: [
       {
         id: 's3-stage1',
@@ -383,3 +383,4 @@ export const iconMap = {
     
 
     
+
