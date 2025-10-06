@@ -1,3 +1,4 @@
+
 import type { LucideIcon } from 'lucide-react';
 import { Home, Heart, ShowerHead, Award, Info, HelpCircle, ListChecks, CheckSquare, AlertTriangle } from 'lucide-react';
 
@@ -49,7 +50,7 @@ export const courseSteps: Step[] = [
     description: 'Acalme seu cão antes do banho.',
     longDescription: 'O objetivo é baixar o nível de excitação para o cão entrar mais calmo no box. Este é um "aquecimento emocional" para diminuir a agitação antes do banho.',
     icon: Home,
-    image: { url: 'https://i.imgur.com/HUXwhfW.png', hint: 'calm dog' },
+    image: { url: 'https://i.imgur.com/IwWbblz.jpeg', hint: 'calm dog' },
     stages: [
       {
         id: 's1-stage1',
@@ -377,3 +378,6 @@ export const iconMap = {
     
 
 
+
+
+    
