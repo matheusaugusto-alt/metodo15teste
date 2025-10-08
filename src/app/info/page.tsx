@@ -68,6 +68,10 @@ export default function InfoPage() {
             {iphoneSteps.map((step, index) => (
               <CarouselItem key={index}>
                 <div className="flex flex-col items-center text-center gap-4 p-1">
+                  <div className="mb-4">
+                    <h3 className="font-headline text-lg font-semibold">{step.title}</h3>
+                    <p className="text-sm text-muted-foreground mt-1">{step.description}</p>
+                  </div>
                   <Image
                     src={step.src}
                     alt={step.alt}
@@ -76,10 +80,6 @@ export default function InfoPage() {
                     className="object-contain w-full h-auto rounded-lg"
                     sizes="(max-width: 640px) 80vw, 25vw"
                   />
-                  <div className="mt-4">
-                    <h3 className="font-headline text-lg font-semibold">{step.title}</h3>
-                    <p className="text-sm text-muted-foreground mt-1">{step.description}</p>
-                  </div>
                 </div>
               </CarouselItem>
             ))}
