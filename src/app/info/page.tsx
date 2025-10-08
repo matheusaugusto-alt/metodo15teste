@@ -1,7 +1,7 @@
 
 'use client';
 
-import { Smartphone } from 'lucide-react';
+import { Smartphone, MoveHorizontal } from 'lucide-react';
 import Image from 'next/image';
 import {
   Carousel,
@@ -14,7 +14,7 @@ import {
 const iphoneSteps = [
   {
     title: '1º Passo',
-    description: 'Clique nos três pontinhos na parte inferior da página.',
+    description: 'Clique nos três pontinhos na parte inferior da página',
     src: 'https://i.imgur.com/A1dpBUk.png',
     alt: 'Passo 1: Clicar no ícone de compartilhamento.',
     width: 428,
@@ -123,6 +123,10 @@ export default function InfoPage() {
           <CarouselPrevious className="hidden sm:inline-flex -left-16" />
           <CarouselNext className="hidden sm:inline-flex -right-16" />
         </Carousel>
+        <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
+            <MoveHorizontal className="h-4 w-4" />
+            Arraste para o lado e veja o passo a passo
+        </p>
       </div>
       
       <div className="bg-card p-6 sm:p-8 rounded-2xl border">
@@ -153,6 +157,10 @@ export default function InfoPage() {
           <CarouselPrevious className="hidden sm:inline-flex -left-16" />
           <CarouselNext className="hidden sm:inline-flex -right-16" />
         </Carousel>
+        <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
+            <MoveHorizontal className="h-4 w-4" />
+            Arraste para o lado e veja o passo a passo
+        </p>
       </div>
     </div>
   );
