@@ -15,7 +15,7 @@ const iphoneSteps = [
   {
     title: 'Passo 1: Menu de Compartilhamento',
     description: 'Abra o menu de compartilhamento do Safari clicando no ícone central.',
-    src: 'https://i.imgur.com/2hCL7cl.png',
+    src: 'https://i.imgur.com/A1dpBUk.png',
     alt: 'Passo 1: Abrir o menu de compartilhamento do Safari.',
     width: 428,
     height: 926
@@ -23,7 +23,7 @@ const iphoneSteps = [
   {
     title: 'Passo 2: Role para baixo',
     description: 'Role para baixo nas opções de compartilhamento para encontrar mais ações.',
-    src: 'https://i.imgur.com/BQ8gZqs.png',
+    src: 'https://i.imgur.com/YtiFfU6.png',
     alt: 'Passo 2: Rolar para baixo nas opções de compartilhamento.',
     width: 428,
     height: 926
@@ -31,7 +31,7 @@ const iphoneSteps = [
   {
     title: 'Passo 3: Adicionar à Tela de Início',
     description: 'Selecione a opção "Adicionar à Tela de Início" para criar o atalho.',
-    src: 'https://i.imgur.com/ZaDUNKW.png',
+    src: 'https://i.imgur.com/cIMKcDD.png',
     alt: 'Passo 3: Selecionar a opção "Adicionar à Tela de Início".',
     width: 428,
     height: 926
@@ -39,7 +39,7 @@ const iphoneSteps = [
   {
     title: 'Passo 4: Confirme a Adição',
     description: 'Confirme o nome do aplicativo e clique em "Adicionar" para finalizar.',
-    src: 'https://i.imgur.com/9TnjTD5.png',
+    src: 'https://i.imgur.com/TSK5Q0B.png',
     alt: 'Passo 4: Confirmar para adicionar o aplicativo à tela de início.',
     width: 428,
     height: 926
