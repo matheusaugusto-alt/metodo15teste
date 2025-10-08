@@ -14,7 +14,7 @@ import {
 const iphoneSteps = [
   {
     title: '1º Passo',
-    description: 'Clique no ícone de compartilhamento na parte inferior da página.',
+    description: 'Clique nos três pontinhos na parte inferior da página.',
     src: 'https://i.imgur.com/A1dpBUk.png',
     alt: 'Passo 1: Clicar no ícone de compartilhamento.',
     width: 428,
