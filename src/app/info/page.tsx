@@ -1,4 +1,7 @@
-import { Smartphone, ArrowLeft, ArrowRight } from 'lucide-react';
+
+'use client';
+
+import { Smartphone } from 'lucide-react';
 import Image from 'next/image';
 import {
   Carousel,
@@ -14,24 +17,32 @@ const iphoneSteps = [
     description: 'Abra o menu de compartilhamento do Safari clicando no ícone central.',
     src: 'https://i.imgur.com/2hCL7cl.png',
     alt: 'Passo 1: Abrir o menu de compartilhamento do Safari.',
+    width: 428,
+    height: 926
   },
   {
     title: 'Passo 2: Role para baixo',
     description: 'Role para baixo nas opções de compartilhamento para encontrar mais ações.',
     src: 'https://i.imgur.com/BQ8gZqs.png',
     alt: 'Passo 2: Rolar para baixo nas opções de compartilhamento.',
+    width: 428,
+    height: 926
   },
   {
     title: 'Passo 3: Adicionar à Tela de Início',
     description: 'Selecione a opção "Adicionar à Tela de Início" para criar o atalho.',
     src: 'https://i.imgur.com/ZaDUNKW.png',
     alt: 'Passo 3: Selecionar a opção "Adicionar à Tela de Início".',
+    width: 428,
+    height: 926
   },
   {
     title: 'Passo 4: Confirme a Adição',
     description: 'Confirme o nome do aplicativo e clique em "Adicionar" para finalizar.',
     src: 'https://i.imgur.com/9TnjTD5.png',
     alt: 'Passo 4: Confirmar para adicionar o aplicativo à tela de início.',
+    width: 428,
+    height: 926
   },
 ];
 
@@ -57,15 +68,14 @@ export default function InfoPage() {
             {iphoneSteps.map((step, index) => (
               <CarouselItem key={index}>
                 <div className="flex flex-col items-center text-center gap-4 p-1">
-                  <div className="relative w-full aspect-[9/19] rounded-xl overflow-hidden border-4 border-foreground/10 shadow-lg">
-                    <Image
-                      src={step.src}
-                      alt={step.alt}
-                      fill
-                      className="object-contain"
-                      sizes="(max-width: 640px) 80vw, 25vw"
-                    />
-                  </div>
+                  <Image
+                    src={step.src}
+                    alt={step.alt}
+                    width={step.width}
+                    height={step.height}
+                    className="object-contain w-full h-auto rounded-lg"
+                    sizes="(max-width: 640px) 80vw, 25vw"
+                  />
                   <div className="mt-4">
                     <h3 className="font-headline text-lg font-semibold">{step.title}</h3>
                     <p className="text-sm text-muted-foreground mt-1">{step.description}</p>
