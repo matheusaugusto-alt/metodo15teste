@@ -1,8 +1,9 @@
-import { PawPrint } from 'lucide-react';
+import { PawPrint, Info } from 'lucide-react';
 import { courseSteps } from '@/lib/data';
 import StepCard from '@/components/steps/StepCard';
 import Image from 'next/image';
-import ImportantInfo from '@/components/home/ImportantInfo';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -34,7 +35,12 @@ export default function Home() {
         </div>
 
         <div className="mt-16 text-center">
-          <ImportantInfo />
+          <Button asChild variant="outline" size="lg">
+            <Link href="/info">
+              <Info className="mr-2 h-5 w-5" />
+              Informações importantes
+            </Link>
+          </Button>
         </div>
 
         <div className="mt-20 sm:mt-28">
