@@ -22,7 +22,7 @@ const iphoneSteps = [
   },
   {
     title: '2º Passo',
-    description: 'Role para baixo nas opções de compartilhamento para encontrar mais ações.',
+    description: 'Clique em Compartilhar (em alguns celulares essa opção já aparece no inicio)',
     src: 'https://i.imgur.com/YtiFfU6.png',
     alt: 'Passo 2: Rolar para baixo nas opções.',
     width: 428,
@@ -30,7 +30,7 @@ const iphoneSteps = [
   },
   {
     title: '3º Passo',
-    description: 'Desça um pouco a tela e clique em "Adicionar à Tela de Início".',
+    description: 'Desce um pouco a tela e clique em “Adicionar à Tela de Início”',
     src: 'https://i.imgur.com/cIMKcDD.png',
     alt: 'Passo 3: Selecionar a opção "Adicionar à Tela de Início".',
     width: 428,
@@ -38,7 +38,7 @@ const iphoneSteps = [
   },
   {
     title: '4º Passo',
-    description: 'Clique em "Adicionar" para finalizar.',
+    description: 'Clique em “Adicionar”',
     src: 'https://i.imgur.com/TSK5Q0B.png',
     alt: 'Passo 4: Confirmar para adicionar o aplicativo à tela de início.',
     width: 428,
