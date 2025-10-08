@@ -2,6 +2,7 @@ import { PawPrint } from 'lucide-react';
 import { courseSteps } from '@/lib/data';
 import StepCard from '@/components/steps/StepCard';
 import Image from 'next/image';
+import ImportantInfo from '@/components/home/ImportantInfo';
 
 export default function Home() {
   return (
@@ -30,6 +31,10 @@ export default function Home() {
               data-ai-hint="happy dog bath"
             />
           </div>
+        </div>
+
+        <div className="mt-16 text-center">
+          <ImportantInfo />
         </div>
 
         <div className="mt-20 sm:mt-28">
