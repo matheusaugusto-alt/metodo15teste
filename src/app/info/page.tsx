@@ -65,7 +65,7 @@ const androidSteps = [
   },
   {
     title: '3º Passo',
-    description: 'Confirme a instalação clicando em "Instalar".',
+    description: 'Clique em adicionar',
     src: 'https://i.imgur.com/rB5enHX.png',
     alt: 'Passo 3: Confirmar a instalação.',
     width: 428,
