@@ -50,7 +50,7 @@ const androidSteps = [
     {
     title: '1º Passo',
     description: 'Clique nos três pontinhos na parte superior da página.',
-    src: 'https://i.imgur.com/2hCL7cl.png',
+    src: 'https://i.imgur.com/9snv783.png',
     alt: 'Passo 1: Abrir o menu de opções do Chrome.',
     width: 428,
     height: 926
@@ -58,7 +58,7 @@ const androidSteps = [
   {
     title: '2º Passo',
     description: 'Clique em "Instalar aplicativo" (em alguns celulares pode aparecer como "Adicionar à tela inicial").',
-    src: 'https://i.imgur.com/BQ8gZqs.png',
+    src: 'https://i.imgur.com/uFodV1u.png',
     alt: 'Passo 2: Selecionar Instalar aplicativo.',
     width: 428,
     height: 926
@@ -66,7 +66,7 @@ const androidSteps = [
   {
     title: '3º Passo',
     description: 'Confirme a instalação clicando em "Instalar".',
-    src: 'https://i.imgur.com/ZaDUNKW.png',
+    src: 'https://i.imgur.com/rB5enHX.png',
     alt: 'Passo 3: Confirmar a instalação.',
     width: 428,
     height: 926
@@ -74,7 +74,7 @@ const androidSteps = [
     {
     title: '4º Passo',
     description: 'Pronto! O aplicativo aparecerá na sua tela inicial.',
-    src: 'https://i.imgur.com/9TnjTD5.png',
+    src: 'https://i.imgur.com/4Xy7c4D.png',
     alt: 'Passo 4: Aplicativo instalado na tela inicial.',
     width: 428,
     height: 926
