@@ -91,7 +91,7 @@ export default function InfoPage() {
           Aviso Importante
         </h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-3xl">
-          Para usar o Método FICA-15 da melhor forma, adicione-o à tela inicial do seu celular. Siga o passo a passo abaixo:
+          Para usar o Método FICA-15 da melhor forma, é recomendado adicionar à tela inicial e utilizar igual um aplicativo, para isso siga o passo a passo a seguir:
         </p>
       </div>
 
@@ -99,7 +99,7 @@ export default function InfoPage() {
         <h2 className="font-headline text-2xl font-semibold mb-6 text-center">
           iPhone (Safari)
         </h2>
-        <div className="flex flex-col items-center">
+        <div className="relative flex flex-col items-center">
             <Carousel className="w-full max-w-xs sm:max-w-sm" opts={{ loop: true }}>
             <CarouselContent>
                 {iphoneSteps.map((step, index) => (
@@ -121,8 +121,8 @@ export default function InfoPage() {
                 </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2" />
-            <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2" />
+            <CarouselPrevious className="absolute left-0 sm:-left-8 top-1/2 -translate-y-1/2" />
+            <CarouselNext className="absolute right-0 sm:-right-8 top-1/2 -translate-y-1/2" />
             </Carousel>
             <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
                 <MoveHorizontal className="h-4 w-4" />
@@ -135,7 +135,7 @@ export default function InfoPage() {
         <h2 className="font-headline text-2xl font-semibold mb-6 text-center">
           Android (Chrome)
         </h2>
-        <div className="flex flex-col items-center">
+        <div className="relative flex flex-col items-center">
             <Carousel className="w-full max-w-xs sm:max-w-sm" opts={{ loop: true }}>
             <CarouselContent>
                 {androidSteps.map((step, index) => (
@@ -157,8 +157,8 @@ export default function InfoPage() {
                 </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2" />
-            <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2" />
+            <CarouselPrevious className="absolute left-0 sm:-left-8 top-1/2 -translate-y-1/2" />
+            <CarouselNext className="absolute right-0 sm:-right-8 top-1/2 -translate-y-1/2" />
             </Carousel>
             <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
                 <MoveHorizontal className="h-4 w-4" />
