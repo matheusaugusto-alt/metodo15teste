@@ -73,7 +73,7 @@ const androidSteps = [
   },
     {
     title: '4º Passo',
-    description: 'Pronto! O aplicativo aparecerá na sua tela inicial.',
+    description: 'Clique em adicionar novamente',
     src: 'https://i.imgur.com/4Xy7c4D.png',
     alt: 'Passo 4: Aplicativo instalado na tela inicial.',
     width: 428,
