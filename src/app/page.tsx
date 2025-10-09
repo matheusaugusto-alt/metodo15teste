@@ -35,7 +35,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-12 text-center">
           <Button asChild size="lg" variant="default">
             <Link href="/info">
               <Info className="mr-2 h-5 w-5" />
@@ -44,7 +44,7 @@ export default function Home() {
           </Button>
         </div>
 
-        <div className="mt-20 sm:mt-28">
+        <div className="mt-16 sm:mt-20">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="font-headline text-3xl sm:text-4xl font-bold text-foreground">
               Comece sua jornada
