@@ -4,10 +4,11 @@ import StepCard from '@/components/steps/StepCard';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import BottomNav from '@/components/layout/BottomNav';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-20 md:pb-0">
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
@@ -35,7 +36,7 @@ export default function Home() {
         </div>
 
         <div className="mt-16 text-center">
-          <Button asChild size="lg">
+          <Button asChild size="lg" variant="default">
             <Link href="/info">
               <Info className="mr-2 h-5 w-5" />
               Informações importantes
@@ -57,6 +58,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <BottomNav />
     </div>
   );
 }
