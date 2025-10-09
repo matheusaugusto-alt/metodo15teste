@@ -99,68 +99,72 @@ export default function InfoPage() {
         <h2 className="font-headline text-2xl font-semibold mb-6 text-center">
           iPhone (Safari)
         </h2>
-        <Carousel className="w-full max-w-xs sm:max-w-sm mx-auto" opts={{ loop: true }}>
-          <CarouselContent>
-            {iphoneSteps.map((step, index) => (
-              <CarouselItem key={index}>
-                <div className="flex flex-col items-center text-center gap-4 p-1">
-                  <div className="mb-4">
-                    <h3 className="font-headline text-lg font-semibold">{step.title}</h3>
-                    <p className="text-sm text-muted-foreground mt-1">{step.description}</p>
-                  </div>
-                  <Image
-                    src={step.src}
-                    alt={step.alt}
-                    width={step.width}
-                    height={step.height}
-                    className="object-contain w-full h-auto rounded-lg"
-                    sizes="(max-width: 640px) 80vw, 25vw"
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="-left-8 sm:-left-12" />
-          <CarouselNext className="-right-8 sm:-right-12" />
-        </Carousel>
-        <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
-            <MoveHorizontal className="h-4 w-4" />
-            Arraste para o lado e veja o passo a passo
-        </p>
+        <div className="flex flex-col items-center">
+            <Carousel className="w-full max-w-xs sm:max-w-sm" opts={{ loop: true }}>
+            <CarouselContent>
+                {iphoneSteps.map((step, index) => (
+                <CarouselItem key={index}>
+                    <div className="flex flex-col items-center text-center gap-4 p-1">
+                    <div className="mb-4">
+                        <h3 className="font-headline text-lg font-semibold">{step.title}</h3>
+                        <p className="text-sm text-muted-foreground mt-1">{step.description}</p>
+                    </div>
+                    <Image
+                        src={step.src}
+                        alt={step.alt}
+                        width={step.width}
+                        height={step.height}
+                        className="object-contain w-full h-auto rounded-lg"
+                        sizes="(max-width: 640px) 80vw, 25vw"
+                    />
+                    </div>
+                </CarouselItem>
+                ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2" />
+            <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2" />
+            </Carousel>
+            <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
+                <MoveHorizontal className="h-4 w-4" />
+                Arraste para o lado e veja o passo a passo
+            </p>
+        </div>
       </div>
       
       <div className="bg-card p-6 sm:p-8 rounded-2xl border">
         <h2 className="font-headline text-2xl font-semibold mb-6 text-center">
           Android (Chrome)
         </h2>
-        <Carousel className="w-full max-w-xs sm:max-w-sm mx-auto" opts={{ loop: true }}>
-          <CarouselContent>
-            {androidSteps.map((step, index) => (
-              <CarouselItem key={index}>
-                <div className="flex flex-col items-center text-center gap-4 p-1">
-                  <div className="mb-4">
-                    <h3 className="font-headline text-lg font-semibold">{step.title}</h3>
-                    <p className="text-sm text-muted-foreground mt-1">{step.description}</p>
-                  </div>
-                  <Image
-                    src={step.src}
-                    alt={step.alt}
-                    width={step.width}
-                    height={step.height}
-                    className="object-contain w-full h-auto rounded-lg"
-                    sizes="(max-width: 640px) 80vw, 25vw"
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="-left-8 sm:-left-12" />
-          <CarouselNext className="-right-8 sm:-right-12" />
-        </Carousel>
-        <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
-            <MoveHorizontal className="h-4 w-4" />
-            Arraste para o lado e veja o passo a passo
-        </p>
+        <div className="flex flex-col items-center">
+            <Carousel className="w-full max-w-xs sm:max-w-sm" opts={{ loop: true }}>
+            <CarouselContent>
+                {androidSteps.map((step, index) => (
+                <CarouselItem key={index}>
+                    <div className="flex flex-col items-center text-center gap-4 p-1">
+                    <div className="mb-4">
+                        <h3 className="font-headline text-lg font-semibold">{step.title}</h3>
+                        <p className="text-sm text-muted-foreground mt-1">{step.description}</p>
+                    </div>
+                    <Image
+                        src={step.src}
+                        alt={step.alt}
+                        width={step.width}
+                        height={step.height}
+                        className="object-contain w-full h-auto rounded-lg"
+                        sizes="(max-width: 640px) 80vw, 25vw"
+                    />
+                    </div>
+                </CarouselItem>
+                ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2" />
+            <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2" />
+            </Carousel>
+            <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
+                <MoveHorizontal className="h-4 w-4" />
+                Arraste para o lado e veja o passo a passo
+            </p>
+        </div>
       </div>
     </div>
   );
