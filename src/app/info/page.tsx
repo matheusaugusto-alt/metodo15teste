@@ -57,7 +57,7 @@ const androidSteps = [
   },
   {
     title: '2º Passo',
-    description: 'Clique em "Instalar aplicativo" (em alguns celulares pode aparecer como "Adicionar à tela inicial").',
+    description: 'Clique em Adicionar à tela inicial',
     src: 'https://i.imgur.com/uFodV1u.png',
     alt: 'Passo 2: Selecionar Instalar aplicativo.',
     width: 428,
@@ -120,8 +120,8 @@ export default function InfoPage() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="sm:inline-flex -left-4" />
-          <CarouselNext className="sm:inline-flex -right-4" />
+          <CarouselPrevious className="-left-8 sm:-left-12" />
+          <CarouselNext className="-right-8 sm:-right-12" />
         </Carousel>
         <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
             <MoveHorizontal className="h-4 w-4" />
@@ -154,8 +154,8 @@ export default function InfoPage() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="sm:inline-flex -left-4" />
-          <CarouselNext className="sm:inline-flex -right-4" />
+          <CarouselPrevious className="-left-8 sm:-left-12" />
+          <CarouselNext className="-right-8 sm:-right-12" />
         </Carousel>
         <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
             <MoveHorizontal className="h-4 w-4" />
