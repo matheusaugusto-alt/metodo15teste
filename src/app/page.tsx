@@ -35,7 +35,7 @@ export default function Home() {
         </div>
 
         <div className="mt-16 text-center">
-          <Button asChild variant="outline" size="lg">
+          <Button asChild size="lg">
             <Link href="/info">
               <Info className="mr-2 h-5 w-5" />
               Informações importantes
