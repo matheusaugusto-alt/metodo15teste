@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: 'Método FICA-15',
   description: 'A step-by-step guide to a calm bath for your dog.',
   manifest: '/manifest.json',
+  icons: {
+    apple: "https://i.imgur.com/WIskf54.png",
+  },
 };
 
 export const viewport: Viewport = {
@@ -32,7 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head>
+        <link rel="apple-touch-icon" href="https://i.imgur.com/WIskf54.png"></link>
+      </head>
       <body className={cn(
         'min-h-screen bg-background font-body antialiased',
         fontBody.variable,
