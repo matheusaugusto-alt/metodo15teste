@@ -1,7 +1,7 @@
 {
-  "name": "Método FICA-15",
-  "short_name": "FICA-15",
-  "description": "Seu passo a passo para deixar o cachorro tranquilo para o banho",
+  "name": "Plano FICA-15",
+  "short_name": "Plano FICA-15",
+  "description": "A step-by-step guide to a calm bath for your dog.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#F5F7FA",

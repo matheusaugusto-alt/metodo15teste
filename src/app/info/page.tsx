@@ -91,7 +91,7 @@ export default function InfoPage() {
           Aviso Importante
         </h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-3xl">
-          Para usar o Método FICA-15 da melhor forma, é recomendado adicionar à tela inicial e utilizar igual um aplicativo, para isso siga o passo a passo a seguir:
+          Para usar o Plano FICA-15 da melhor forma, é recomendado adicionar à tela inicial e utilizar igual um aplicativo, para isso siga o passo a passo a seguir:
         </p>
       </div>
 
@@ -100,70 +100,70 @@ export default function InfoPage() {
           iPhone (Safari)
         </h2>
         <div className="relative flex flex-col items-center">
-            <Carousel className="w-full max-w-xs sm:max-w-sm" opts={{ loop: true }}>
+          <Carousel className="w-full max-w-xs sm:max-w-sm" opts={{ loop: true }}>
             <CarouselContent>
-                {iphoneSteps.map((step, index) => (
+              {iphoneSteps.map((step, index) => (
                 <CarouselItem key={index}>
-                    <div className="flex flex-col items-center text-center gap-4 p-1">
+                  <div className="flex flex-col items-center text-center gap-4 p-1">
                     <div className="mb-4">
-                        <h3 className="font-headline text-lg font-semibold">{step.title}</h3>
-                        <p className="text-sm text-muted-foreground mt-1">{step.description}</p>
+                      <h3 className="font-headline text-lg font-semibold">{step.title}</h3>
+                      <p className="text-sm text-muted-foreground mt-1">{step.description}</p>
                     </div>
                     <Image
-                        src={step.src}
-                        alt={step.alt}
-                        width={step.width}
-                        height={step.height}
-                        className="object-contain w-full h-auto rounded-lg"
-                        sizes="(max-width: 640px) 80vw, 25vw"
+                      src={step.src}
+                      alt={step.alt}
+                      width={step.width}
+                      height={step.height}
+                      className="object-contain w-full h-auto rounded-lg"
+                      sizes="(max-width: 640px) 80vw, 25vw"
                     />
-                    </div>
+                  </div>
                 </CarouselItem>
-                ))}
+              ))}
             </CarouselContent>
             <CarouselPrevious className="absolute left-0 sm:-left-8 top-1/2 -translate-y-1/2" />
             <CarouselNext className="absolute right-0 sm:-right-8 top-1/2 -translate-y-1/2" />
-            </Carousel>
-            <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
-                <MoveHorizontal className="h-4 w-4" />
-                Arraste para o lado e veja o passo a passo
-            </p>
+          </Carousel>
+          <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
+            <MoveHorizontal className="h-4 w-4" />
+            Arraste para o lado e veja o passo a passo
+          </p>
         </div>
       </div>
-      
+
       <div className="bg-card p-6 sm:p-8 rounded-2xl border">
         <h2 className="font-headline text-2xl font-semibold mb-6 text-center">
           Android (Chrome)
         </h2>
         <div className="relative flex flex-col items-center">
-            <Carousel className="w-full max-w-xs sm:max-w-sm" opts={{ loop: true }}>
+          <Carousel className="w-full max-w-xs sm:max-w-sm" opts={{ loop: true }}>
             <CarouselContent>
-                {androidSteps.map((step, index) => (
+              {androidSteps.map((step, index) => (
                 <CarouselItem key={index}>
-                    <div className="flex flex-col items-center text-center gap-4 p-1">
+                  <div className="flex flex-col items-center text-center gap-4 p-1">
                     <div className="mb-4">
-                        <h3 className="font-headline text-lg font-semibold">{step.title}</h3>
-                        <p className="text-sm text-muted-foreground mt-1">{step.description}</p>
+                      <h3 className="font-headline text-lg font-semibold">{step.title}</h3>
+                      <p className="text-sm text-muted-foreground mt-1">{step.description}</p>
                     </div>
                     <Image
-                        src={step.src}
-                        alt={step.alt}
-                        width={step.width}
-                        height={step.height}
-                        className="object-contain w-full h-auto rounded-lg"
-                        sizes="(max-width: 640px) 80vw, 25vw"
+                      src={step.src}
+                      alt={step.alt}
+                      width={step.width}
+                      height={step.height}
+                      className="object-contain w-full h-auto rounded-lg"
+                      sizes="(max-width: 640px) 80vw, 25vw"
                     />
-                    </div>
+                  </div>
                 </CarouselItem>
-                ))}
+              ))}
             </CarouselContent>
             <CarouselPrevious className="absolute left-0 sm:-left-8 top-1/2 -translate-y-1/2" />
             <CarouselNext className="absolute right-0 sm:-right-8 top-1/2 -translate-y-1/2" />
-            </Carousel>
-            <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
-                <MoveHorizontal className="h-4 w-4" />
-                Arraste para o lado e veja o passo a passo
-            </p>
+          </Carousel>
+          <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2">
+            <MoveHorizontal className="h-4 w-4" />
+            Arraste para o lado e veja o passo a passo
+          </p>
         </div>
       </div>
     </div>

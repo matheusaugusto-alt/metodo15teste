@@ -16,7 +16,7 @@ export default function Home() {
               <PawPrint className="h-8 w-8 text-primary" />
             </div>
             <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground tracking-tight">
-              Método FICA-15
+              Plano FICA-15
             </h1>
             <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
               Seu passo a passo para deixar o cachorro tranquilo para o banho
@@ -35,7 +35,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <Button asChild size="lg" variant="default">
             <Link href="/info">
               <Info className="mr-2 h-5 w-5" />
@@ -44,7 +44,7 @@ export default function Home() {
           </Button>
         </div>
 
-        <div className="mt-16 sm:mt-20">
+        <div className="mt-12 sm:mt-16">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="font-headline text-3xl sm:text-4xl font-bold text-foreground">
               Comece sua jornada
